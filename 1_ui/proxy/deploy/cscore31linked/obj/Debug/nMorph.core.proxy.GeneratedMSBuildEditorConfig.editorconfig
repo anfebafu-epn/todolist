@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = nMorph.core.proxy
+build_property.ProjectDir = C:\TodoList\nMorph\1_ui\proxy\deploy\cscore31linked\

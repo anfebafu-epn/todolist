@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+     <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+  <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="nMorph.framework.common">
+      <HintPath>..\..\..\..\5_framework\common\deploy\cscore31linked\bin\nMorph.framework.common.dll</HintPath>
+    </Reference>
+    <Reference Include="nMorph.framework.svc">
+      <HintPath>..\..\..\..\5_framework\svc\deploy\cscore31linked\bin\nMorph.framework.svc.dll</HintPath>
+    </Reference>
+    <Reference Include="nMorph.framework.orm">
+      <HintPath>..\..\..\..\5_framework\orm\deploy\cscore31linked\bin\nMorph.framework.orm.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

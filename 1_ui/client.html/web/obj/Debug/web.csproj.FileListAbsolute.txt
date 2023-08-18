@@ -1,0 +1,140 @@
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\web.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\web.pdb
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\csc.exe
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\csc.exe.config
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\csc.rsp
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\csi.exe
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\csi.exe.config
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\csi.rsp
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\System.Buffers.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\System.Collections.Immutable.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\System.Memory.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\System.Numerics.Vectors.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\System.Reflection.Metadata.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\vbc.exe
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\vbc.exe.config
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\vbc.rsp
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\VBCSCompiler.exe
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\roslyn\VBCSCompiler.exe.config
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\dotnet-bundle.exe
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\Microsoft.Build.Framework.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\Microsoft.Build.Utilities.Core.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\Microsoft.NET.StringTools.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\Newtonsoft.Json.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\NUglify.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\System.Buffers.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\System.Collections.Immutable.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\System.Configuration.ConfigurationManager.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\System.Memory.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\System.Numerics.Vectors.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\System.Security.AccessControl.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\System.Security.Permissions.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\System.Security.Principal.Windows.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\Microsoft.Build.Framework.pdb
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\Microsoft.Build.Framework.xml
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\Microsoft.Build.Utilities.Core.pdb
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\Microsoft.Build.Utilities.Core.xml
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\Microsoft.NET.StringTools.pdb
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\Newtonsoft.Json.xml
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\NUglify.xml
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\System.Buffers.xml
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\System.Collections.Immutable.xml
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\System.Configuration.ConfigurationManager.xml
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\System.Memory.xml
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\System.Numerics.Vectors.xml
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\System.Security.AccessControl.xml
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\System.Security.Permissions.xml
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\bin\System.Security.Principal.Windows.xml
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\obj\Debug\web.csproj.AssemblyReference.cache
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\obj\Debug\web.csproj.CoreCompileInputs.cache
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\obj\Debug\web.csproj.CopyComplete
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\obj\Debug\web.dll
+C:\Workspace_Products\nMorph - Framework\1. DEV\nMorph\1_ui\client.html\web\obj\Debug\web.pdb
+C:\TodoList\nMorph\1_ui\client.html\web\bin\web.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\web.pdb
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\csc.exe
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\csc.exe.config
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\csc.rsp
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\csi.exe
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\csi.exe.config
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\csi.rsp
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\Microsoft.Managed.Core.targets
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\System.Buffers.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\System.Collections.Immutable.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\System.Memory.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\System.Numerics.Vectors.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\System.Reflection.Metadata.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\vbc.exe
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\vbc.exe.config
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\vbc.rsp
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\VBCSCompiler.exe
+C:\TodoList\nMorph\1_ui\client.html\web\bin\roslyn\VBCSCompiler.exe.config
+C:\TodoList\nMorph\1_ui\client.html\web\bin\dotnet-bundle.exe
+C:\TodoList\nMorph\1_ui\client.html\web\bin\Microsoft.Build.Framework.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\Microsoft.Build.Utilities.Core.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\Microsoft.NET.StringTools.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\Newtonsoft.Json.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\NUglify.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\System.Buffers.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\System.Collections.Immutable.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\System.Configuration.ConfigurationManager.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\System.Memory.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\System.Numerics.Vectors.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\System.Security.AccessControl.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\System.Security.Permissions.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\System.Security.Principal.Windows.dll
+C:\TodoList\nMorph\1_ui\client.html\web\bin\Microsoft.Build.Framework.pdb
+C:\TodoList\nMorph\1_ui\client.html\web\bin\Microsoft.Build.Framework.xml
+C:\TodoList\nMorph\1_ui\client.html\web\bin\Microsoft.Build.Utilities.Core.pdb
+C:\TodoList\nMorph\1_ui\client.html\web\bin\Microsoft.Build.Utilities.Core.xml
+C:\TodoList\nMorph\1_ui\client.html\web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\TodoList\nMorph\1_ui\client.html\web\bin\Microsoft.NET.StringTools.pdb
+C:\TodoList\nMorph\1_ui\client.html\web\bin\Newtonsoft.Json.xml
+C:\TodoList\nMorph\1_ui\client.html\web\bin\NUglify.xml
+C:\TodoList\nMorph\1_ui\client.html\web\bin\System.Buffers.xml
+C:\TodoList\nMorph\1_ui\client.html\web\bin\System.Collections.Immutable.xml
+C:\TodoList\nMorph\1_ui\client.html\web\bin\System.Configuration.ConfigurationManager.xml
+C:\TodoList\nMorph\1_ui\client.html\web\bin\System.Memory.xml
+C:\TodoList\nMorph\1_ui\client.html\web\bin\System.Numerics.Vectors.xml
+C:\TodoList\nMorph\1_ui\client.html\web\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\TodoList\nMorph\1_ui\client.html\web\bin\System.Security.AccessControl.xml
+C:\TodoList\nMorph\1_ui\client.html\web\bin\System.Security.Permissions.xml
+C:\TodoList\nMorph\1_ui\client.html\web\bin\System.Security.Principal.Windows.xml
+C:\TodoList\nMorph\1_ui\client.html\web\obj\Debug\web.csproj.AssemblyReference.cache
+C:\TodoList\nMorph\1_ui\client.html\web\obj\Debug\web.csproj.CoreCompileInputs.cache
+C:\TodoList\nMorph\1_ui\client.html\web\obj\Debug\web.csproj.CopyComplete
+C:\TodoList\nMorph\1_ui\client.html\web\obj\Debug\web.dll
+C:\TodoList\nMorph\1_ui\client.html\web\obj\Debug\web.pdb

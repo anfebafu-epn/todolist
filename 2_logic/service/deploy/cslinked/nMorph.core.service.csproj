@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5d159321-e79a-4c1f-98de-b9a7eae73489}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nMorph.core.service</RootNamespace>
+    <AssemblyName>nMorph.core.service</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="nMorph.framework.common">
+      <HintPath>..\..\..\..\5_framework\common\deploy\cslinked\bin\nMorph.framework.common.dll</HintPath>
+    </Reference>
+    <Reference Include="nMorph.framework.svc">
+      <HintPath>..\..\..\..\5_framework\svc\deploy\cslinked\bin\nMorph.framework.svc.dll</HintPath>
+    </Reference>
+    <Reference Include="nMorph.framework.orm">
+      <HintPath>..\..\..\..\5_framework\orm\deploy\cslinked\bin\nMorph.framework.orm.dll</HintPath>
+    </Reference>
+    <Reference Include="nMorph.framework.esb">
+      <HintPath>..\..\..\..\5_framework\esb\deploy\cslinked\bin\nMorph.framework.esb.dll</HintPath>
+    </Reference>
+    <Reference Include="nMorph.core.db">
+      <HintPath>..\..\..\..\3_data\db\deploy\cslinked\bin\nMorph.core.db.dll</HintPath>
+    </Reference>
+    <Reference Include="nMorph.core.objects">
+      <HintPath>..\..\..\..\2_logic\objects\deploy\cslinked\bin\nMorph.core.objects.dll</HintPath>
+    </Reference>
+    <Reference Include="nMorph.core.logic">
+      <HintPath>..\..\..\..\2_logic\logic\deploy\cslinked\bin\nMorph.core.logic.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\nMorph\core\service\Service.cs" />
+    <Compile Include="src\nMorph\core\service\configuration\Initializer.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

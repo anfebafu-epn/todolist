@@ -1,0 +1,13 @@
+C:\TodoList\nMorph\1_ui\proxy\deploy\cslinked\bin\nMorph.core.proxy.dll
+C:\TodoList\nMorph\1_ui\proxy\deploy\cslinked\bin\nMorph.core.proxy.pdb
+C:\TodoList\nMorph\1_ui\proxy\deploy\cslinked\bin\nMorph.framework.common.dll
+C:\TodoList\nMorph\1_ui\proxy\deploy\cslinked\bin\nMorph.framework.orm.dll
+C:\TodoList\nMorph\1_ui\proxy\deploy\cslinked\bin\nMorph.framework.svc.dll
+C:\TodoList\nMorph\1_ui\proxy\deploy\cslinked\bin\nMorph.framework.common.pdb
+C:\TodoList\nMorph\1_ui\proxy\deploy\cslinked\bin\nMorph.framework.svc.pdb
+C:\TodoList\nMorph\1_ui\proxy\deploy\cslinked\bin\nMorph.framework.orm.pdb
+C:\TodoList\nMorph\1_ui\proxy\deploy\cslinked\obj\Debug\nMorph.core.proxy.csproj.AssemblyReference.cache
+C:\TodoList\nMorph\1_ui\proxy\deploy\cslinked\obj\Debug\nMorph.core.proxy.csproj.CoreCompileInputs.cache
+C:\TodoList\nMorph\1_ui\proxy\deploy\cslinked\obj\Debug\nMorph.core.proxy.csproj.CopyComplete
+C:\TodoList\nMorph\1_ui\proxy\deploy\cslinked\obj\Debug\nMorph.core.proxy.dll
+C:\TodoList\nMorph\1_ui\proxy\deploy\cslinked\obj\Debug\nMorph.core.proxy.pdb

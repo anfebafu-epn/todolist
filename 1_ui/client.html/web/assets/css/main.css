@@ -1,0 +1,38 @@
+﻿:root {
+  --main-color1: #000000;
+  --main-color1-contrast: #ffffff;
+  --main-color1-hover: #dbdbdb;
+  --main-color1-hover-contrast: #000000;
+  --main-color2: #743636;
+  --main-color2-contrast: #ffffff;
+  --main-color2-hover: #a9770f;
+  --main-color2-hover-contrast: #000000;
+  --main-color3: red;
+  --main-color4: yellow;
+  --main-color5: gray;
+  --bar-background1: #e8e8e8;
+  --bar-background2: #aaaaaa;
+  --text-title1: #743636;
+  --text-title1-hover: #a9770f;
+  --text-black: #000000;
+  --text-gray: #aaaaaa;
+  --text-white: #ffffff; }
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 12px; }
+
+h1 {
+  font-size: 24px; }
+
+h2 {
+  font-size: 20px; }
+
+h3 {
+  font-size: 16px; }
+
+h4 {
+  font-size: 13px; }
+
+h5 {
+  font-size: 10px; }

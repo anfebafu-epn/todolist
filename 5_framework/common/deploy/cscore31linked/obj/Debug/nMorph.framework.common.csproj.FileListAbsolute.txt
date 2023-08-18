@@ -1,0 +1,8 @@
+C:\TodoList\nMorph\5_framework\common\deploy\cscore31linked\bin\nMorph.framework.common.deps.json
+C:\TodoList\nMorph\5_framework\common\deploy\cscore31linked\bin\nMorph.framework.common.dll
+C:\TodoList\nMorph\5_framework\common\deploy\cscore31linked\bin\nMorph.framework.common.pdb
+C:\TodoList\nMorph\5_framework\common\deploy\cscore31linked\obj\Debug\nMorph.framework.common.csproj.AssemblyReference.cache
+C:\TodoList\nMorph\5_framework\common\deploy\cscore31linked\obj\Debug\nMorph.framework.common.GeneratedMSBuildEditorConfig.editorconfig
+C:\TodoList\nMorph\5_framework\common\deploy\cscore31linked\obj\Debug\nMorph.framework.common.csproj.CoreCompileInputs.cache
+C:\TodoList\nMorph\5_framework\common\deploy\cscore31linked\obj\Debug\nMorph.framework.common.dll
+C:\TodoList\nMorph\5_framework\common\deploy\cscore31linked\obj\Debug\nMorph.framework.common.pdb

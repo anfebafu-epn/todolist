@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web", "web\web.csproj", "{A1C7BA96-65E5-465A-BC0E-57AD774C1184}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1C7BA96-65E5-465A-BC0E-57AD774C1184}.Debug|AnyCPU.ActiveCfg = Debug|Any CPU
+		{A1C7BA96-65E5-465A-BC0E-57AD774C1184}.Debug|AnyCPU.Build.0 = Debug|Any CPU
+		{A1C7BA96-65E5-465A-BC0E-57AD774C1184}.Release|AnyCPU.ActiveCfg = Release|Any CPU
+		{A1C7BA96-65E5-465A-BC0E-57AD774C1184}.Release|AnyCPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7368FB5-0763-4130-A72D-4ED0321F8436}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://alm.smartwork.com.ec/smartwork%20products
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = web\\web.csproj
+		SccProjectName1 = web
+		SccLocalPath1 = web
+	EndGlobalSection
+EndGlobal

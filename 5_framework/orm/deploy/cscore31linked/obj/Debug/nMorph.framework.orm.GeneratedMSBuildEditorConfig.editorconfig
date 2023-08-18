@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = nMorph.framework.orm
+build_property.ProjectDir = C:\TodoList\nMorph\5_framework\orm\deploy\cscore31linked\

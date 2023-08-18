@@ -1,0 +1,17 @@
+C:\TodoList\nMorph\3_data\db\deploy\cscore31linked\bin\nMorph.core.db.deps.json
+C:\TodoList\nMorph\3_data\db\deploy\cscore31linked\bin\nMorph.core.db.dll
+C:\TodoList\nMorph\3_data\db\deploy\cscore31linked\bin\nMorph.core.db.pdb
+C:\TodoList\nMorph\3_data\db\deploy\cscore31linked\bin\nMorph.framework.common.dll
+C:\TodoList\nMorph\3_data\db\deploy\cscore31linked\bin\nMorph.framework.esb.dll
+C:\TodoList\nMorph\3_data\db\deploy\cscore31linked\bin\nMorph.framework.orm.dll
+C:\TodoList\nMorph\3_data\db\deploy\cscore31linked\bin\nMorph.framework.svc.dll
+C:\TodoList\nMorph\3_data\db\deploy\cscore31linked\bin\nMorph.framework.common.pdb
+C:\TodoList\nMorph\3_data\db\deploy\cscore31linked\bin\nMorph.framework.svc.pdb
+C:\TodoList\nMorph\3_data\db\deploy\cscore31linked\bin\nMorph.framework.orm.pdb
+C:\TodoList\nMorph\3_data\db\deploy\cscore31linked\bin\nMorph.framework.esb.pdb
+C:\TodoList\nMorph\3_data\db\deploy\cscore31linked\obj\Debug\nMorph.core.db.csproj.AssemblyReference.cache
+C:\TodoList\nMorph\3_data\db\deploy\cscore31linked\obj\Debug\nMorph.core.db.GeneratedMSBuildEditorConfig.editorconfig
+C:\TodoList\nMorph\3_data\db\deploy\cscore31linked\obj\Debug\nMorph.core.db.csproj.CoreCompileInputs.cache
+C:\TodoList\nMorph\3_data\db\deploy\cscore31linked\obj\Debug\nMorph.core.db.csproj.CopyComplete
+C:\TodoList\nMorph\3_data\db\deploy\cscore31linked\obj\Debug\nMorph.core.db.dll
+C:\TodoList\nMorph\3_data\db\deploy\cscore31linked\obj\Debug\nMorph.core.db.pdb

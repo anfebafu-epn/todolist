@@ -1,0 +1,56 @@
+[
+  {
+    "outputFileName": "index.min.js",
+    "inputFiles": [
+      "index.js"
+    ]
+  },
+  {
+    "outputFileName": "category.min.js",
+    "inputFiles": [
+      "category.js"
+    ]
+  },
+  {
+    "outputFileName": "person.min.js",
+    "inputFiles": [
+      "person.js"
+    ]
+  },
+  {
+    "outputFileName": "task.min.js",
+    "inputFiles": [
+      "task.js"
+    ]
+  },
+  {
+    "outputFileName": "assets/js/web.min.js",
+    "inputFiles": [
+      "assets/js/web.js"
+    ]
+  },
+  {
+    "outputFileName": "assets/js/Base.min.js",
+    "inputFiles": [
+      "assets/js/Base.js"
+    ]
+  },
+  {
+    "outputFileName": "assets/js/proxy.min.js",
+    "inputFiles": [
+      "assets/js/proxy.js"
+    ]
+  },
+  {
+    "outputFileName": "assets/js/main.min.js",
+    "inputFiles": [
+      "assets/js/main.js"
+    ]
+  },
+  {
+    "outputFileName": "assets/css/main.min.css",
+    "inputFiles": [
+      "assets/css/main.css"
+    ]
+  }
+]

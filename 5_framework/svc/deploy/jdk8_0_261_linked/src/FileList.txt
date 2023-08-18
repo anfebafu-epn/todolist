@@ -1,0 +1,7 @@
+"C:\\TodoList\\nMorph\\5_framework\\svc\\deploy\\jdk8_0_261_linked\\src\\nMorph\\framework\\svc\\SVC.java"
+"C:\\TodoList\\nMorph\\5_framework\\svc\\deploy\\jdk8_0_261_linked\\src\\nMorph\\framework\\svc\\exceptions\\ExceptionManager.java"
+"C:\\TodoList\\nMorph\\5_framework\\svc\\deploy\\jdk8_0_261_linked\\src\\nMorph\\framework\\svc\\msg\\RequestMessage.java"
+"C:\\TodoList\\nMorph\\5_framework\\svc\\deploy\\jdk8_0_261_linked\\src\\nMorph\\framework\\svc\\msg\\ResponseMessage.java"
+"C:\\TodoList\\nMorph\\5_framework\\svc\\deploy\\jdk8_0_261_linked\\src\\nMorph\\framework\\svc\\transport\\MethodCall.java"
+"C:\\TodoList\\nMorph\\5_framework\\svc\\deploy\\jdk8_0_261_linked\\src\\nMorph\\framework\\svc\\transport\\MethodResult.java"
+"C:\\TodoList\\nMorph\\5_framework\\svc\\deploy\\jdk8_0_261_linked\\src\\nMorph\\framework\\svc\\transport\\Router.java"

@@ -1,0 +1,54 @@
+-cp 5_framework\common\src
+-main nMorph.framework.common.Common
+-dce no
+-D net-ver 4.0
+-D dll
+-debug
+-xml 5_framework\common\deploy\Common.xml
+-cs 5_framework\common\deploy\cs
+
+--next
+
+-cp 5_framework\common\src
+-main nMorph.framework.common.Common
+-dce no
+-D net-ver 4.0
+-D dll
+-cs 5_framework\common\deploy\cs
+
+--next
+
+-cp 5_framework\common\src
+-main nMorph.framework.common.Common
+-dce no
+-debug
+-java 5_framework\common\deploy\java
+
+--next
+
+-cp 5_framework\common\src
+-main nMorph.framework.common.Common
+-dce no
+-java 5_framework\common\deploy\java
+
+--next
+
+-cp 5_framework\common\src
+-main nMorph.framework.common.Common
+-dce no
+-debug
+-php 5_framework\common\deploy\php
+
+#--next
+#-cp 5_framework\common\src
+#-main nMorph.framework.common.Common
+#-js 5_framework\common\deploy\js\common.js
+#-lib codegen 
+#--macro "CodeGen.haxeExtern('outlib','','myproj.filter','myproj.mapper')"
+
+--next
+-cp 5_framework\common\src
+-main nMorph.framework.common.Common
+-dce no
+-D gen-hx-classes
+-swf 5_framework\common\deploy\integrator.swf

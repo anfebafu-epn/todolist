@@ -1,0 +1,95 @@
+--cmd echo INICIO - %date% %time%
+
+--next
+--cmd echo ===================================
+--cmd echo LIMPIEZA - %date% %time%
+--cmd echo ===================================
+
+--next
+clean_build.hxml
+
+--next
+--cmd echo ===================================
+--cmd echo COMMON - %date% %time%
+--cmd echo ===================================
+
+--next
+./5_framework/common/common_prod.hxml
+
+--next
+--cmd echo ===================================
+--cmd echo ORM - %date% %time%
+--cmd echo ===================================
+
+--next
+./5_framework/orm/orm_prod.hxml
+
+--next
+--cmd echo ===================================
+--cmd echo SVC - %date% %time%
+--cmd echo ===================================
+
+--next
+./5_framework/svc/svc_prod.hxml
+
+--next
+--cmd echo ===================================
+--cmd echo ESB - %date% %time%
+--cmd echo ===================================
+
+--next
+./5_framework/esb/esb_prod.hxml
+
+--next
+--cmd echo ===================================
+--cmd echo DB - %date% %time%
+--cmd echo ===================================
+
+--next
+./3_data/db/db_prod.hxml
+
+--next
+--cmd echo ===================================
+--cmd echo OBJECTS - %date% %time%
+--cmd echo ===================================
+
+--next
+./2_logic/objects/objects_prod.hxml
+
+--next
+--cmd echo ===================================
+--cmd echo LOGIC - %date% %time%
+--cmd echo ===================================
+
+--next
+./2_logic/logic/logic_prod.hxml
+
+--next
+--cmd echo ===================================
+--cmd echo SERVICE - %date% %time%
+--cmd echo ===================================
+
+--next
+./2_logic/service/service_prod.hxml
+
+--next
+--cmd echo ===================================
+--cmd echo PROXY - %date% %time%
+--cmd echo ===================================
+
+--next
+./1_ui/proxy/proxy_prod.hxml
+
+--next
+
+--cmd echo ===================================
+--cmd echo BATCH %date% %time%
+--cmd echo ===================================
+
+--next
+./4_batch/batch/batch_prod.hxml
+
+--next
+--cmd echo ===================================
+--cmd echo FIN %date% %time%
+--cmd echo ===================================

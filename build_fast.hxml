@@ -1,0 +1,170 @@
+--cmd echo INICIO - %date% %time%
+
+--next
+--cmd echo ===================================
+--cmd echo COMPILACION HAXE - %date% %time%
+--cmd echo ===================================
+
+--next
+
+-cp 3_data\db\src
+-cp 5_framework\common\src
+-cp 5_framework\orm\src
+-cp 5_framework\esb\src
+-cp 5_framework\svc\src
+-lib hscript
+-D hscriptPos
+-main nMorph.core.db.Db
+-dce no
+-D net-ver 4.0
+-D dll
+-D no-compilation
+-D real-position
+-debug
+-xml 3_data\db\out\db.xml
+-cs 3_data\db\out\cs
+-lib hscript
+
+--next
+
+-cp 2_logic\objects\src
+-cp 3_data\db\src
+-cp 5_framework\common\src
+-cp 5_framework\orm\src
+-cp 5_framework\esb\src
+-cp 5_framework\svc\src
+-lib hscript
+-D hscriptPos
+-main nMorph.core.objects.Objects
+-dce no
+-D net-ver 4.0
+-D dll
+-D no-compilation
+-D real-position
+-debug
+-xml 2_logic\objects\out\objects.xml
+-cs 2_logic\objects\out\cs
+-lib hscript
+
+--next
+
+-cp 2_logic\logic\src
+-cp 2_logic\objects\src
+-cp 3_data\db\src
+-cp 5_framework\common\src
+-cp 5_framework\orm\src
+-cp 5_framework\esb\src
+-cp 5_framework\svc\src
+-lib hscript
+-D hscriptPos
+-main nMorph.core.logic.Logic
+-dce no
+-D net-ver 4.0
+-D dll
+-D no-compilation
+-D real-position
+-debug
+-xml 2_logic\logic\out\logic.xml
+-cs 2_logic\logic\out\cs
+-lib hscript
+
+
+--next
+
+-cp 2_logic\service\src
+-cp 5_framework\common\src
+-cp 5_framework\orm\src
+-cp 5_framework\esb\src
+-cp 5_framework\svc\src
+-cp 2_logic\logic\src
+-cp 2_logic\objects\src
+-cp 3_data\db\src
+-lib hscript
+-D hscriptPos
+-main nMorph.core.service.Service
+-dce no
+-D net-ver 4.0
+-D dll
+-D no-compilation
+-D real-position
+-debug
+-xml 2_logic\service\out\service.xml
+-cs 2_logic\service\out\cs
+
+
+--next
+
+-cp 4_batch\batch\src
+-cp 5_framework\common\src
+-cp 5_framework\orm\src
+-cp 5_framework\esb\src
+-cp 5_framework\svc\src
+-cp 2_logic\logic\src
+-cp 2_logic\objects\src
+-cp 3_data\db\src
+-lib hscript
+-D hscriptPos
+-main nMorph.core.batch.Batch
+-dce no
+-D net-ver 4.0
+-D no-compilation
+-D real-position
+-debug
+-xml 4_batch\batch\out\batch.xml
+-cs 4_batch\batch\out\cs
+-lib hscript
+
+
+--next
+--cmd echo ===================================
+--cmd echo DB - %date% %time%
+--cmd echo ===================================
+
+--next
+./3_data/db/db_fast.hxml
+
+--next
+--cmd echo ===================================
+--cmd echo OBJECTS - %date% %time%
+--cmd echo ===================================
+
+--next
+./2_logic/objects/objects_fast.hxml
+
+--next
+--cmd echo ===================================
+--cmd echo LOGIC - %date% %time%
+--cmd echo ===================================
+
+--next
+./2_logic/logic/logic_fast.hxml
+
+--next
+--cmd echo ===================================
+--cmd echo SERVICE - %date% %time%
+--cmd echo ===================================
+
+--next
+./2_logic/service/service_fast.hxml
+
+#--next
+#--cmd echo ===================================
+#--cmd echo PROXY - %date% %time%
+#--cmd echo ===================================
+
+#--next
+#./1_ui/proxy/proxy_fast.hxml
+
+--next
+
+--cmd echo ===================================
+--cmd echo BATCH %date% %time%
+--cmd echo ===================================
+
+--next
+./4_batch/batch/batch_fast.hxml
+
+--next
+--cmd echo ===================================
+--cmd echo FIN %date% %time%
+--cmd echo ===================================

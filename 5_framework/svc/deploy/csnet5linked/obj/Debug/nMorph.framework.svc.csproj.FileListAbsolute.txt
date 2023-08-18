@@ -1,0 +1,13 @@
+C:\TodoList\nMorph\5_framework\svc\deploy\csnet5linked\bin\nMorph.framework.svc.deps.json
+C:\TodoList\nMorph\5_framework\svc\deploy\csnet5linked\bin\nMorph.framework.svc.dll
+C:\TodoList\nMorph\5_framework\svc\deploy\csnet5linked\bin\ref\nMorph.framework.svc.dll
+C:\TodoList\nMorph\5_framework\svc\deploy\csnet5linked\bin\nMorph.framework.svc.pdb
+C:\TodoList\nMorph\5_framework\svc\deploy\csnet5linked\bin\nMorph.framework.common.dll
+C:\TodoList\nMorph\5_framework\svc\deploy\csnet5linked\bin\nMorph.framework.common.pdb
+C:\TodoList\nMorph\5_framework\svc\deploy\csnet5linked\obj\Debug\nMorph.framework.svc.csproj.AssemblyReference.cache
+C:\TodoList\nMorph\5_framework\svc\deploy\csnet5linked\obj\Debug\nMorph.framework.svc.GeneratedMSBuildEditorConfig.editorconfig
+C:\TodoList\nMorph\5_framework\svc\deploy\csnet5linked\obj\Debug\nMorph.framework.svc.csproj.CoreCompileInputs.cache
+C:\TodoList\nMorph\5_framework\svc\deploy\csnet5linked\obj\Debug\nMorph.framework.svc.csproj.CopyComplete
+C:\TodoList\nMorph\5_framework\svc\deploy\csnet5linked\obj\Debug\nMorph.framework.svc.dll
+C:\TodoList\nMorph\5_framework\svc\deploy\csnet5linked\obj\Debug\ref\nMorph.framework.svc.dll
+C:\TodoList\nMorph\5_framework\svc\deploy\csnet5linked\obj\Debug\nMorph.framework.svc.pdb

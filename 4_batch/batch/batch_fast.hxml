@@ -1,0 +1,11 @@
+
+# Linker Argumentos esperados
+# posición 0: Path relativo de la carpeta del proyecto // 1_ui/proxy/
+# posición 1: Path relativo de las carpetas que el presente proyecto hace referencia, separados por comas
+# posición 2: Nombre del Namespace actual sw.core.xxxx, sw.framework.xxx // debe coincidir con la ruta de las carpetas
+# posición 3: Entorno de compilación Dev=0, Prod = 1
+# posicion 4: Método de logueo Consola = 0, Archivo = 1, Ambos = 2
+# posicion 5: Método de render: compilación = 0, service = 1, orm = 2
+
+--cmd 6_tools\linker\linker\bin\Debug\nMorph.framework.linker.exe 4_batch\batch\ 5_framework\common\,5_framework\svc\,5_framework\orm\,5_framework\esb\,3_data\db\,2_logic\objects\,2_logic\logic\ nMorph.core.batch 0 0 5
+

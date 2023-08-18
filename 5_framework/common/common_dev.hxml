@@ -1,0 +1,43 @@
+-cp 5_framework\common\src
+-lib hscript
+-main nMorph.framework.common.Common
+-dce no
+-D net-ver 4.0
+-D dll
+-D hscriptPos
+-D real-position
+-debug
+-D no-compilation
+-xml 5_framework\common\out\Common.xml
+-cs 5_framework\common\out\cs
+
+--next
+
+-cp 5_framework\common\src
+-lib hscript
+-D hscriptPos
+-main nMorph.framework.common.Common
+-dce no
+-php 5_framework\common\out\php
+
+--next
+
+#-cp 5_framework\common\src
+#-lib hscript
+#-D hscriptPos
+#-main nMorph.framework.common.Common
+#-dce no
+#-D no-compilation
+#-java 5_framework\common\out\java
+
+#--next
+
+# Linker Argumentos esperados
+# posición 0: Path relativo de la carpeta del proyecto // 1_ui/proxy/
+# posición 1: Path relativo de las carpetas que el presente proyecto hace referencia, separados por comas
+# posición 2: Nombre del Namespace actual nMorph.core.xxxx, nMorph.framework.xxx // debe coincidir con la ruta de las carpetas
+# posición 3: Entorno de compilación Dev=0, Prod = 1
+# posicion 4: Método de logueo Consola = 0, Archivo = 1, Ambos = 2
+# posicion 5: Método de render: compilación = 0, service = 1, orm = 2
+
+--cmd 6_tools\linker\linker\bin\Debug\nMorph.framework.linker.exe 5_framework\common\ none nMorph.framework.common 1 0 0

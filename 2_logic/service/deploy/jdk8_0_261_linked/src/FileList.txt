@@ -1,0 +1,2 @@
+"C:\\TodoList\\nMorph\\2_logic\\service\\deploy\\jdk8_0_261_linked\\src\\nMorph\\core\\service\\Service.java"
+"C:\\TodoList\\nMorph\\2_logic\\service\\deploy\\jdk8_0_261_linked\\src\\nMorph\\core\\service\\configuration\\Initializer.java"

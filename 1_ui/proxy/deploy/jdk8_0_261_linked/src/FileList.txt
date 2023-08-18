@@ -1,0 +1,3 @@
+"C:\\TodoList\\nMorph\\1_ui\\proxy\\deploy\\jdk8_0_261_linked\\src\\nMorph\\core\\proxy\\Proxy.java"
+"C:\\TodoList\\nMorph\\1_ui\\proxy\\deploy\\jdk8_0_261_linked\\src\\nMorph\\core\\proxy\\tools\\Initializer.java"
+"C:\\TodoList\\nMorph\\1_ui\\proxy\\deploy\\jdk8_0_261_linked\\src\\nMorph\\core\\proxy\\tools\\Packager.java"

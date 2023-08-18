@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <title>To do list</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="nMorph Platform" />
+    <meta property="og:type" content="product.group" />
+    <meta property="og:url" content="https://www.nmorph.com" />
+    <meta property="og:image" content="favicon.svg" />
+    <!-- Favicon -->
+    <!--<link rel="shortcut icon" type="image/x-icon" href="assets/imgs/favicon.svg" />-->
+</head>
+
+<body>
+    <header id="header">
+        <a href="task.html">Tasks</a>
+        <a href="person.html">Users</a>
+        <a href="category.html">Categories</a>
+        <a href="javascript: ui.Person.CloseSession();">Close Session</a>
+    </header>
+
+    <main>
+        <h1>Users Management</h1>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button id="searchButton">Search</button>
+            <button id="clearButton">Clear</button>
+            <button id="newButton">New</button>
+        </div>
+
+        <div id="usersContainer">
+            <!-- Aquí se cargarán las categorías -->
+        </div>
+
+        <div id="editModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Edit User</h2>
+                <div id="editUserForm">
+                    <input type="hidden" id="personId">
+                    <label for="personFullName">User Full Name:</label>
+                    <input type="text" id="personFullName" name="personFullName" required><br />
+                    <label for="personEmail">E-mail:</label>
+                    <input type="text" id="personEmail" name="personEmail" required><br />
+                    <label for="personPassword">Password:</label>
+                    <input type="password" id="personPassword" name="personPassword" required><br />
+                    <label for="personRole">Role:</label>
+                    <select id="personRole" name="personRole">
+                        <option value="1">Executor</option>
+                        <option value="2">Supervisor</option>
+                    </select><br />
+                    <div class="editButtons">
+                        <button id="btn_Save">Save</button>
+                        <button id="btn_Delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="footer">
+    </footer>
+
+    <div id="notificationContainer" class="hidden">
+        <div id="notificationMessage"></div>
+    </div>
+
+    <script src="lib/headjs/head-1.0.3.min.js" data-headjs-load="person.js?v=XXXXXXXXXXXX"></script>
+</body>
+</html>

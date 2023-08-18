@@ -1,0 +1,265 @@
+﻿body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    overflow: hidden;
+    background-image: url('assets/imgs/login_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.GlobalLoginBox {
+    width: 700px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.5);
+    margin-left: auto;
+    margin-top: calc(50vh - 250px);
+    margin-right: auto;
+    margin-bottom: auto;
+
+    .GlobalLoginForm {
+        opacity: 1;
+        text-align: center;
+        padding: 30px;
+    }
+}
+
+.LoginForm {
+    font-size: 18px;
+
+    .LoginLine {
+        margin: 30px;
+
+        .LoginLabel {
+            display: none;
+            margin: 10px;
+            text-align: left;
+        }
+
+        #LoginLostPassword {
+            display: block;
+            margin: 30px;
+            text-decoration: underline;
+            cursor: pointer;
+            color: var(--main-color1);
+        }
+
+        #LoginLostPassword:hover {
+            color: var(--main-color1-hover);
+        }
+
+
+        #btn_Login {
+            width: 350px;
+            border-radius: 5px;
+            border-style: none;
+            background-color: var(--main-color1);
+            color: var(--main-color1-contrast);
+            font-size: 20px;
+            height: 35px;
+            cursor: pointer;
+        }
+
+        #btn_Login:hover {
+            background-color: var(--main-color1-hover);
+            color: var(--main-color1-hover-contrast);
+        }
+    }
+
+    input {
+        font-size: 24px;
+        border-radius: 5px;
+        border-style: none;
+        height: 40px;
+        width: 70%;
+        background-color: rgba(255,255,255,0.7);
+    }
+}
+
+.LostPasswordWindow {
+    display: none;
+    font-size: 18px;
+
+    .LoginLine {
+        margin: 30px;
+
+        #btn_Recovery {
+            width: 250px;
+            border-radius: 5px;
+            border-style: none;
+            background-color: var(--main-color1);
+            color: var(--main-color1-contrast);
+            font-size: 20px;
+            height: 35px;
+            cursor: pointer;
+        }
+
+        #btn_Recovery:hover {
+            background-color: var(--main-color1-hover);
+            color: var(--main-color1-hover-contrast);
+        }
+
+        #LoginLostPasswordBack {
+            display: block;
+            margin: 30px;
+            text-decoration: underline;
+            cursor: pointer;
+            color: var(--main-color1);
+        }
+
+        #LoginLostPasswordBack:hover {
+            color: var(--main-color1-hover);
+        }
+    }
+
+    input {
+        font-size: 24px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        height: 40px;
+        width: 350px;
+        background-color: rgba(255,255,255,0.7);
+    }
+}
+
+.ResetPasswordWindow {
+    display: none;
+    font-size: 18px;
+
+    .LoginLine {
+        margin: 30px;
+
+
+        #btn_Reset {
+            width: 250px;
+            border-radius: 5px;
+            border-style: none;
+            background-color: var(--main-color1);
+            color: var(--main-color1-contrast);
+            font-size: 20px;
+            height: 35px;
+            cursor: pointer;
+        }
+
+        #btn_Reset:hover {
+            background-color: var(--main-color1-hover);
+            color: var(--main-color1-hover-contrast);
+        }
+
+        #LoginResetPasswordBack {
+            display: block;
+            margin: 30px;
+            text-decoration: underline;
+            cursor: pointer;
+            color: var(--main-color1);
+        }
+
+        #LoginResetPasswordBack:hover {
+            color: var(--main-color1-hover);
+        }
+    }
+
+    input {
+        font-size: 24px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        height: 40px;
+        width: 350px;
+        background-color: rgba(255,255,255,0.7);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .GlobalLoginBox {
+        width: 100%;
+        height: 60%;
+        border-radius: 0px;
+        margin-top: 10vh;
+    }
+
+    .GlobalLoginForm {
+        padding: 0px;
+    }
+
+    .LoginForm {
+        font-size: 14px;
+
+        .LoginLine {
+            margin: 15px;
+
+            #LoginLostPassword {
+                margin: 10px;
+                font-size: 15px;
+            }
+
+            #btn_Login {
+                width: 90%;
+                font-size: 20px;
+                height: 30px;
+            }
+        }
+
+        input {
+            font-size: 18px;
+            height: 35px;
+            width: 90%;
+        }
+    }
+
+    .LostPasswordWindow {
+        font-size: 14px;
+
+        .LoginLine {
+            margin: 15px;
+
+            #btn_Recovery {
+                width: 90%;
+                font-size: 20px;
+                height: 30px;
+            }
+
+            #LoginLostPasswordBack {
+                margin: 10px;
+                font-size: 15px;
+            }
+        }
+
+        input {
+            font-size: 18px;
+            height: 35px;
+            width: 90%;
+        }
+    }
+
+    .ResetPasswordWindow {
+        font-size: 14px;
+
+        .LoginLine {
+            margin: 15px;
+
+
+            #btn_Reset {
+                width: 90%;
+                font-size: 20px;
+                height: 30px;
+            }
+
+            #LoginResetPasswordBack {
+                margin: 10px;
+                font-size: 15px;
+            }
+        }
+
+        input {
+            font-size: 18px;
+            height: 35px;
+            width: 90%;
+        }
+    }
+}
+

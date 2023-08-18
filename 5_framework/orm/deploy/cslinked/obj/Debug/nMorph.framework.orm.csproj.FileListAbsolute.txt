@@ -1,0 +1,9 @@
+C:\TodoList\nMorph\5_framework\orm\deploy\cslinked\bin\nMorph.framework.orm.dll
+C:\TodoList\nMorph\5_framework\orm\deploy\cslinked\bin\nMorph.framework.orm.pdb
+C:\TodoList\nMorph\5_framework\orm\deploy\cslinked\bin\nMorph.framework.common.dll
+C:\TodoList\nMorph\5_framework\orm\deploy\cslinked\bin\nMorph.framework.common.pdb
+C:\TodoList\nMorph\5_framework\orm\deploy\cslinked\obj\Debug\nMorph.framework.orm.csproj.AssemblyReference.cache
+C:\TodoList\nMorph\5_framework\orm\deploy\cslinked\obj\Debug\nMorph.framework.orm.csproj.CoreCompileInputs.cache
+C:\TodoList\nMorph\5_framework\orm\deploy\cslinked\obj\Debug\nMorph.framework.orm.csproj.CopyComplete
+C:\TodoList\nMorph\5_framework\orm\deploy\cslinked\obj\Debug\nMorph.framework.orm.dll
+C:\TodoList\nMorph\5_framework\orm\deploy\cslinked\obj\Debug\nMorph.framework.orm.pdb

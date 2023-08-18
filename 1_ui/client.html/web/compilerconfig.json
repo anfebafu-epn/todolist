@@ -1,0 +1,22 @@
+﻿[
+  {
+    "outputFile": "assets/css/main.css",
+    "inputFile": "assets/css/main.scss"
+  },
+  {
+    "outputFile": "index.css",
+    "inputFile": "index.scss"
+  },
+  {
+    "outputFile": "category.css",
+    "inputFile": "category.scss"
+  },
+  {
+    "outputFile": "person.css",
+    "inputFile": "person.scss"
+  },
+  {
+    "outputFile": "task.css",
+    "inputFile": "task.scss"
+  }
+]

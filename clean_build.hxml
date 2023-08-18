@@ -1,0 +1,86 @@
+-cmd if exist ".\5_framework\common\out" rmdir /s /q ".\5_framework\common\out"
+
+--next
+
+-cmd if exist ".\5_framework\esb\out" rmdir /s /q ".\5_framework\esb\out"
+
+--next
+
+-cmd if exist ".\5_framework\orm\out" rmdir /s /q ".\5_framework\orm\out"
+
+--next
+
+-cmd if exist ".\5_framework\svc\out" rmdir /s /q ".\5_framework\svc\out"
+
+--next
+
+-cmd if exist ".\3_data\db\out" rmdir /s /q ".\3_data\db\out"
+
+--next
+
+-cmd if exist ".\2_logic\objects\out" rmdir /s /q ".\2_logic\objects\out"
+
+--next
+
+-cmd if exist ".\2_logic\logic\out" rmdir /s /q ".\2_logic\logic\out"
+
+--next
+
+-cmd if exist ".\2_logic\service\out" rmdir /s /q ".\2_logic\service\out"
+
+--next
+
+-cmd if exist ".\1_ui\proxy\out" rmdir /s /q ".\1_ui\proxy\out"
+
+--next
+
+-cmd if exist ".\4_batch\batch\out" rmdir /s /q ".\4_batch\batch\out"
+
+--next
+
+-cmd if exist ".\5_framework\common\deploy" rmdir /s /q ".\5_framework\common\deploy"
+
+--next
+
+-cmd if exist ".\5_framework\esb\deploy" rmdir /s /q ".\5_framework\esb\deploy"
+
+--next
+
+-cmd if exist ".\5_framework\orm\deploy" rmdir /s /q ".\5_framework\orm\deploy"
+
+--next
+
+-cmd if exist ".\5_framework\svc\deploy" rmdir /s /q ".\5_framework\svc\deploy"
+
+--next
+
+-cmd if exist ".\3_data\db\deploy" rmdir /s /q ".\3_data\db\deploy"
+
+--next
+
+-cmd if exist ".\2_logic\objects\deploy" rmdir /s /q ".\2_logic\objects\deploy"
+
+--next
+
+-cmd if exist ".\2_logic\logic\deploy" rmdir /s /q ".\2_logic\logic\deploy"
+
+--next
+
+-cmd if exist ".\2_logic\service\deploy" rmdir /s /q ".\2_logic\service\deploy"
+
+--next
+
+-cmd if exist ".\1_ui\proxy\deploy" rmdir /s /q ".\1_ui\proxy\deploy"
+
+--next
+
+-cmd if exist ".\4_batch\batch\deploy" rmdir /s /q ".\4_batch\batch\deploy"
+
+--next
+
+-cmd if exist ".\2_logic\servers\server.java\war" rmdir /s /q .\2_logic\servers\server.java\war"
+
+--next
+
+-cmd if exist ".\2_logic\servers\server.php\lib" rmdir /s /q .\2_logic\servers\server.php\lib"
+

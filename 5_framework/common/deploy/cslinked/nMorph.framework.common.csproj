@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0aa13288-c8ac-45fc-9f0b-ce6fa9775994}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nMorph.framework.common</RootNamespace>
+    <AssemblyName>nMorph.framework.common</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Transactions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\Array.cs" />
+    <Compile Include="src\Date.cs" />
+    <Compile Include="src\DateTools.cs" />
+    <Compile Include="src\EnumValue.cs" />
+    <Compile Include="src\EReg.cs" />
+    <Compile Include="src\IntIterator.cs" />
+    <Compile Include="src\Lambda.cs" />
+    <Compile Include="src\Math.cs" />
+    <Compile Include="src\Reflect.cs" />
+    <Compile Include="src\Std.cs" />
+    <Compile Include="src\StringBuf.cs" />
+    <Compile Include="src\StringTools.cs" />
+    <Compile Include="src\Sys.cs" />
+    <Compile Include="src\Type.cs" />
+    <Compile Include="src\UInt.cs" />
+    <Compile Include="src\Xml.cs" />
+    <Compile Include="src\cs\Boot.cs" />
+    <Compile Include="src\cs\Flags.cs" />
+    <Compile Include="src\cs\Lib.cs" />
+    <Compile Include="src\cs\NativeArray.cs" />
+    <Compile Include="src\cs\internal\FieldLookup.cs" />
+    <Compile Include="src\cs\internal\Function.cs" />
+    <Compile Include="src\cs\internal\HxObject.cs" />
+    <Compile Include="src\cs\internal\Runtime.cs" />
+    <Compile Include="src\cs\internal\StringExt.cs" />
+    <Compile Include="src\cs\io\NativeInput.cs" />
+    <Compile Include="src\cs\io\NativeOutput.cs" />
+    <Compile Include="src\haxe\CallStack.cs" />
+    <Compile Include="src\haxe\Constraints.cs" />
+    <Compile Include="src\haxe\Exception.cs" />
+    <Compile Include="src\haxe\Int32.cs" />
+    <Compile Include="src\haxe\Int64.cs" />
+    <Compile Include="src\haxe\Int64Helper.cs" />
+    <Compile Include="src\haxe\Json.cs" />
+    <Compile Include="src\haxe\Log.cs" />
+    <Compile Include="src\haxe\NativeStackTrace.cs" />
+    <Compile Include="src\haxe\Rest.cs" />
+    <Compile Include="src\haxe\Serializer.cs" />
+    <Compile Include="src\haxe\SysTools.cs" />
+    <Compile Include="src\haxe\Timer.cs" />
+    <Compile Include="src\haxe\Unserializer.cs" />
+    <Compile Include="src\haxe\ValueException.cs" />
+    <Compile Include="src\haxe\crypto\Base64.cs" />
+    <Compile Include="src\haxe\crypto\BaseCode.cs" />
+    <Compile Include="src\haxe\crypto\Md5.cs" />
+    <Compile Include="src\haxe\crypto\Sha1.cs" />
+    <Compile Include="src\haxe\crypto\Sha256.cs" />
+    <Compile Include="src\haxe\ds\BalancedTree.cs" />
+    <Compile Include="src\haxe\ds\EnumValueMap.cs" />
+    <Compile Include="src\haxe\ds\HashMap.cs" />
+    <Compile Include="src\haxe\ds\IntMap.cs" />
+    <Compile Include="src\haxe\ds\List.cs" />
+    <Compile Include="src\haxe\ds\Map.cs" />
+    <Compile Include="src\haxe\ds\ObjectMap.cs" />
+    <Compile Include="src\haxe\ds\ReadOnlyArray.cs" />
+    <Compile Include="src\haxe\ds\StringMap.cs" />
+    <Compile Include="src\haxe\ds\Vector.cs" />
+    <Compile Include="src\haxe\ds\WeakMap.cs" />
+    <Compile Include="src\haxe\exceptions\NotImplementedException.cs" />
+    <Compile Include="src\haxe\exceptions\PosException.cs" />
+    <Compile Include="src\haxe\format\JsonParser.cs" />
+    <Compile Include="src\haxe\format\JsonPrinter.cs" />
+    <Compile Include="src\haxe\http\HttpBase.cs" />
+    <Compile Include="src\haxe\io\ArrayBufferView.cs" />
+    <Compile Include="src\haxe\io\Bytes.cs" />
+    <Compile Include="src\haxe\io\BytesBuffer.cs" />
+    <Compile Include="src\haxe\io\BytesInput.cs" />
+    <Compile Include="src\haxe\io\BytesOutput.cs" />
+    <Compile Include="src\haxe\io\Encoding.cs" />
+    <Compile Include="src\haxe\io\Eof.cs" />
+    <Compile Include="src\haxe\io\Error.cs" />
+    <Compile Include="src\haxe\io\FPHelper.cs" />
+    <Compile Include="src\haxe\io\Input.cs" />
+    <Compile Include="src\haxe\io\Output.cs" />
+    <Compile Include="src\haxe\io\Path.cs" />
+    <Compile Include="src\haxe\io\UInt8Array.cs" />
+    <Compile Include="src\haxe\iterators\ArrayIterator.cs" />
+    <Compile Include="src\haxe\iterators\ArrayKeyValueIterator.cs" />
+    <Compile Include="src\haxe\iterators\HashMapKeyValueIterator.cs" />
+    <Compile Include="src\haxe\iterators\MapKeyValueIterator.cs" />
+    <Compile Include="src\haxe\iterators\RestIterator.cs" />
+    <Compile Include="src\haxe\iterators\RestKeyValueIterator.cs" />
+    <Compile Include="src\haxe\iterators\StringIterator.cs" />
+    <Compile Include="src\haxe\iterators\StringIteratorUnicode.cs" />
+    <Compile Include="src\haxe\iterators\StringKeyValueIterator.cs" />
+    <Compile Include="src\haxe\lang\DceNo.cs" />
+    <Compile Include="src\haxe\lang\Null.cs" />
+    <Compile Include="src\haxe\rtti\CType.cs" />
+    <Compile Include="src\haxe\rtti\XmlParser.cs" />
+    <Compile Include="src\haxe\xml\Access.cs" />
+    <Compile Include="src\haxe\xml\Parser.cs" />
+    <Compile Include="src\haxe\xml\Printer.cs" />
+    <Compile Include="src\hscript\Async.cs" />
+    <Compile Include="src\hscript\Bytes.cs" />
+    <Compile Include="src\hscript\Checker.cs" />
+    <Compile Include="src\hscript\Expr.cs" />
+    <Compile Include="src\hscript\Interp.cs" />
+    <Compile Include="src\hscript\Parser.cs" />
+    <Compile Include="src\hscript\Printer.cs" />
+    <Compile Include="src\hscript\Tools.cs" />
+    <Compile Include="src\nMorph\framework\common\Common.cs" />
+    <Compile Include="src\nMorph\framework\common\configuration\Configuration.cs" />
+    <Compile Include="src\nMorph\framework\common\configuration\ConfigurationData.cs" />
+    <Compile Include="src\nMorph\framework\common\configuration\DeployEnvironmentEnum.cs" />
+    <Compile Include="src\nMorph\framework\common\datatypes\UUID.cs" />
+    <Compile Include="src\nMorph\framework\common\exceptions\ExceptionHelper.cs" />
+    <Compile Include="src\nMorph\framework\common\exceptions\LogicException.cs" />
+    <Compile Include="src\nMorph\framework\common\exceptions\SecurityException.cs" />
+    <Compile Include="src\nMorph\framework\common\helpers\Int64_Helper.cs" />
+    <Compile Include="src\nMorph\framework\common\helpers\SerializationHelper.cs" />
+    <Compile Include="src\nMorph\framework\common\helpers\UUIDKEY.cs" />
+    <Compile Include="src\nMorph\framework\common\interfaces\IDisposable.cs" />
+    <Compile Include="src\sys\FileSystem.cs" />
+    <Compile Include="src\sys\Http.cs" />
+    <Compile Include="src\sys\io\File.cs" />
+    <Compile Include="src\sys\io\FileInput.cs" />
+    <Compile Include="src\sys\io\FileOutput.cs" />
+    <Compile Include="src\sys\io\FileSeek.cs" />
+    <Compile Include="src\sys\io\Process.cs" />
+    <Compile Include="src\sys\net\Address.cs" />
+    <Compile Include="src\sys\net\Host.cs" />
+    <Compile Include="src\sys\net\Socket.cs" />
+    <Compile Include="src\sys\thread\Deque.cs" />
+    <Compile Include="src\sys\thread\EventLoop.cs" />
+    <Compile Include="src\sys\thread\Lock.cs" />
+    <Compile Include="src\sys\thread\Mutex.cs" />
+    <Compile Include="src\sys\thread\NoEventLoopException.cs" />
+    <Compile Include="src\sys\thread\Thread.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

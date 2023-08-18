@@ -1,0 +1,1073 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.1.10.14\build\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props" Condition="Exists('..\packages\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.1.10.14\build\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A1C7BA96-65E5-465A-BC0E-57AD774C1184}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>web</RootNamespace>
+    <AssemblyName>web</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>15.0</OldToolsVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
+    <DockerLaunchUrl>http://{ServiceIPAddress}</DockerLaunchUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TypeScriptTarget>ES2018</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptModuleKind>None</TypeScriptModuleKind>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>False</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TypeScriptTarget>ES2018</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptModuleKind>None</TypeScriptModuleKind>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="dotnet-bundle, Version=3.2.449.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BundlerMinifier.Core.3.2.449\lib\net452\dotnet-bundle.exe</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.Framework, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Build.Framework.16.10.0\lib\net472\Microsoft.Build.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.Utilities.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Build.Utilities.Core.16.10.0\lib\net472\Microsoft.Build.Utilities.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=3.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.NET.StringTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.NET.StringTools.1.0.0\lib\net472\Microsoft.NET.StringTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.Setup.Configuration.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.Setup.Configuration.Interop.1.16.30\lib\net35\Microsoft.VisualStudio.Setup.Configuration.Interop.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NUglify, Version=1.13.12.0, Culture=neutral, PublicKeyToken=15bc7810aec21b5e, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUglify.1.13.12\lib\net40\NUglify.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.5.0.0\lib\net461\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.5.0.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.1\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.4.3.0\lib\net463\System.Runtime.InteropServices.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.5.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Permissions.5.0.0\lib\net461\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Threading.Thread, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Thread.4.3.0\lib\net46\System.Threading.Thread.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404.html" />
+    <Content Include="task.html" />
+    <Content Include="person.html" />
+    <Content Include="index.scss" />
+    <Content Include="category.scss" />
+    <Content Include="person.scss" />
+    <Content Include="task.scss" />
+    <None Include="assets\css\main.scss" />
+    <TypeScriptCompile Include="task.ts" />
+    <TypeScriptCompile Include="person.ts" />
+    <TypeScriptCompile Include="config.ts" />
+    <TypeScriptCompile Include="index.ts" />
+    <TypeScriptCompile Include="category.ts" />
+    <TypeScriptCompile Include="assets\js\web.ts" />
+    <Content Include="assets\imgs\default.svg" />
+    <Content Include="assets\imgs\toggleSearch.svg" />
+    <Content Include="lib\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="lib\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="lib\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="lib\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="lib\bootstrap\css\bootstrap.css" />
+    <Content Include="lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="lib\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="lib\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="lib\bootstrap\js\bootstrap.js" />
+    <Content Include="lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="lib\codemirror\addon\comment\comment.js" />
+    <Content Include="lib\codemirror\addon\comment\comment.min.js" />
+    <Content Include="lib\codemirror\addon\comment\continuecomment.js" />
+    <Content Include="lib\codemirror\addon\comment\continuecomment.min.js" />
+    <Content Include="lib\codemirror\addon\dialog\dialog.css" />
+    <Content Include="lib\codemirror\addon\dialog\dialog.js" />
+    <Content Include="lib\codemirror\addon\dialog\dialog.min.css" />
+    <Content Include="lib\codemirror\addon\dialog\dialog.min.js" />
+    <Content Include="lib\codemirror\addon\display\autorefresh.js" />
+    <Content Include="lib\codemirror\addon\display\autorefresh.min.js" />
+    <Content Include="lib\codemirror\addon\display\fullscreen.css" />
+    <Content Include="lib\codemirror\addon\display\fullscreen.js" />
+    <Content Include="lib\codemirror\addon\display\fullscreen.min.css" />
+    <Content Include="lib\codemirror\addon\display\fullscreen.min.js" />
+    <Content Include="lib\codemirror\addon\display\panel.js" />
+    <Content Include="lib\codemirror\addon\display\panel.min.js" />
+    <Content Include="lib\codemirror\addon\display\placeholder.js" />
+    <Content Include="lib\codemirror\addon\display\placeholder.min.js" />
+    <Content Include="lib\codemirror\addon\display\rulers.js" />
+    <Content Include="lib\codemirror\addon\display\rulers.min.js" />
+    <Content Include="lib\codemirror\addon\edit\closebrackets.js" />
+    <Content Include="lib\codemirror\addon\edit\closebrackets.min.js" />
+    <Content Include="lib\codemirror\addon\edit\closetag.js" />
+    <Content Include="lib\codemirror\addon\edit\closetag.min.js" />
+    <Content Include="lib\codemirror\addon\edit\continuelist.js" />
+    <Content Include="lib\codemirror\addon\edit\continuelist.min.js" />
+    <Content Include="lib\codemirror\addon\edit\matchbrackets.js" />
+    <Content Include="lib\codemirror\addon\edit\matchbrackets.min.js" />
+    <Content Include="lib\codemirror\addon\edit\matchtags.js" />
+    <Content Include="lib\codemirror\addon\edit\matchtags.min.js" />
+    <Content Include="lib\codemirror\addon\edit\trailingspace.js" />
+    <Content Include="lib\codemirror\addon\edit\trailingspace.min.js" />
+    <Content Include="lib\codemirror\addon\fold\brace-fold.js" />
+    <Content Include="lib\codemirror\addon\fold\brace-fold.min.js" />
+    <Content Include="lib\codemirror\addon\fold\comment-fold.js" />
+    <Content Include="lib\codemirror\addon\fold\comment-fold.min.js" />
+    <Content Include="lib\codemirror\addon\fold\foldcode.js" />
+    <Content Include="lib\codemirror\addon\fold\foldcode.min.js" />
+    <Content Include="lib\codemirror\addon\fold\foldgutter.css" />
+    <Content Include="lib\codemirror\addon\fold\foldgutter.js" />
+    <Content Include="lib\codemirror\addon\fold\foldgutter.min.css" />
+    <Content Include="lib\codemirror\addon\fold\foldgutter.min.js" />
+    <Content Include="lib\codemirror\addon\fold\indent-fold.js" />
+    <Content Include="lib\codemirror\addon\fold\indent-fold.min.js" />
+    <Content Include="lib\codemirror\addon\fold\markdown-fold.js" />
+    <Content Include="lib\codemirror\addon\fold\markdown-fold.min.js" />
+    <Content Include="lib\codemirror\addon\fold\xml-fold.js" />
+    <Content Include="lib\codemirror\addon\fold\xml-fold.min.js" />
+    <Content Include="lib\codemirror\addon\hint\anyword-hint.js" />
+    <Content Include="lib\codemirror\addon\hint\anyword-hint.min.js" />
+    <Content Include="lib\codemirror\addon\hint\css-hint.js" />
+    <Content Include="lib\codemirror\addon\hint\css-hint.min.js" />
+    <Content Include="lib\codemirror\addon\hint\html-hint.js" />
+    <Content Include="lib\codemirror\addon\hint\html-hint.min.js" />
+    <Content Include="lib\codemirror\addon\hint\javascript-hint.js" />
+    <Content Include="lib\codemirror\addon\hint\javascript-hint.min.js" />
+    <Content Include="lib\codemirror\addon\hint\show-hint.css" />
+    <Content Include="lib\codemirror\addon\hint\show-hint.js" />
+    <Content Include="lib\codemirror\addon\hint\show-hint.min.css" />
+    <Content Include="lib\codemirror\addon\hint\show-hint.min.js" />
+    <Content Include="lib\codemirror\addon\hint\sql-hint.js" />
+    <Content Include="lib\codemirror\addon\hint\sql-hint.min.js" />
+    <Content Include="lib\codemirror\addon\hint\xml-hint.js" />
+    <Content Include="lib\codemirror\addon\hint\xml-hint.min.js" />
+    <Content Include="lib\codemirror\addon\lint\coffeescript-lint.js" />
+    <Content Include="lib\codemirror\addon\lint\coffeescript-lint.min.js" />
+    <Content Include="lib\codemirror\addon\lint\css-lint.js" />
+    <Content Include="lib\codemirror\addon\lint\css-lint.min.js" />
+    <Content Include="lib\codemirror\addon\lint\html-lint.js" />
+    <Content Include="lib\codemirror\addon\lint\html-lint.min.js" />
+    <Content Include="lib\codemirror\addon\lint\javascript-lint.js" />
+    <Content Include="lib\codemirror\addon\lint\javascript-lint.min.js" />
+    <Content Include="lib\codemirror\addon\lint\json-lint.js" />
+    <Content Include="lib\codemirror\addon\lint\json-lint.min.js" />
+    <Content Include="lib\codemirror\addon\lint\lint.css" />
+    <Content Include="lib\codemirror\addon\lint\lint.js" />
+    <Content Include="lib\codemirror\addon\lint\lint.min.css" />
+    <Content Include="lib\codemirror\addon\lint\lint.min.js" />
+    <Content Include="lib\codemirror\addon\lint\yaml-lint.js" />
+    <Content Include="lib\codemirror\addon\lint\yaml-lint.min.js" />
+    <Content Include="lib\codemirror\addon\merge\merge.css" />
+    <Content Include="lib\codemirror\addon\merge\merge.js" />
+    <Content Include="lib\codemirror\addon\merge\merge.min.css" />
+    <Content Include="lib\codemirror\addon\merge\merge.min.js" />
+    <Content Include="lib\codemirror\addon\mode\loadmode.js" />
+    <Content Include="lib\codemirror\addon\mode\loadmode.min.js" />
+    <Content Include="lib\codemirror\addon\mode\multiplex.js" />
+    <Content Include="lib\codemirror\addon\mode\multiplex.min.js" />
+    <Content Include="lib\codemirror\addon\mode\multiplex_test.js" />
+    <Content Include="lib\codemirror\addon\mode\multiplex_test.min.js" />
+    <Content Include="lib\codemirror\addon\mode\overlay.js" />
+    <Content Include="lib\codemirror\addon\mode\overlay.min.js" />
+    <Content Include="lib\codemirror\addon\mode\simple.js" />
+    <Content Include="lib\codemirror\addon\mode\simple.min.js" />
+    <Content Include="lib\codemirror\addon\runmode\colorize.js" />
+    <Content Include="lib\codemirror\addon\runmode\colorize.min.js" />
+    <Content Include="lib\codemirror\addon\runmode\runmode-standalone.js" />
+    <Content Include="lib\codemirror\addon\runmode\runmode-standalone.min.js" />
+    <Content Include="lib\codemirror\addon\runmode\runmode.js" />
+    <Content Include="lib\codemirror\addon\runmode\runmode.min.js" />
+    <Content Include="lib\codemirror\addon\runmode\runmode.node.js" />
+    <Content Include="lib\codemirror\addon\runmode\runmode.node.min.js" />
+    <Content Include="lib\codemirror\addon\scroll\annotatescrollbar.js" />
+    <Content Include="lib\codemirror\addon\scroll\annotatescrollbar.min.js" />
+    <Content Include="lib\codemirror\addon\scroll\scrollpastend.js" />
+    <Content Include="lib\codemirror\addon\scroll\scrollpastend.min.js" />
+    <Content Include="lib\codemirror\addon\scroll\simplescrollbars.css" />
+    <Content Include="lib\codemirror\addon\scroll\simplescrollbars.js" />
+    <Content Include="lib\codemirror\addon\scroll\simplescrollbars.min.css" />
+    <Content Include="lib\codemirror\addon\scroll\simplescrollbars.min.js" />
+    <Content Include="lib\codemirror\addon\search\jump-to-line.js" />
+    <Content Include="lib\codemirror\addon\search\jump-to-line.min.js" />
+    <Content Include="lib\codemirror\addon\search\match-highlighter.js" />
+    <Content Include="lib\codemirror\addon\search\match-highlighter.min.js" />
+    <Content Include="lib\codemirror\addon\search\matchesonscrollbar.css" />
+    <Content Include="lib\codemirror\addon\search\matchesonscrollbar.js" />
+    <Content Include="lib\codemirror\addon\search\matchesonscrollbar.min.css" />
+    <Content Include="lib\codemirror\addon\search\matchesonscrollbar.min.js" />
+    <Content Include="lib\codemirror\addon\search\search.js" />
+    <Content Include="lib\codemirror\addon\search\search.min.js" />
+    <Content Include="lib\codemirror\addon\search\searchcursor.js" />
+    <Content Include="lib\codemirror\addon\search\searchcursor.min.js" />
+    <Content Include="lib\codemirror\addon\selection\active-line.js" />
+    <Content Include="lib\codemirror\addon\selection\active-line.min.js" />
+    <Content Include="lib\codemirror\addon\selection\mark-selection.js" />
+    <Content Include="lib\codemirror\addon\selection\mark-selection.min.js" />
+    <Content Include="lib\codemirror\addon\selection\selection-pointer.js" />
+    <Content Include="lib\codemirror\addon\selection\selection-pointer.min.js" />
+    <Content Include="lib\codemirror\addon\tern\tern.css" />
+    <Content Include="lib\codemirror\addon\tern\tern.js" />
+    <Content Include="lib\codemirror\addon\tern\tern.min.css" />
+    <Content Include="lib\codemirror\addon\tern\tern.min.js" />
+    <Content Include="lib\codemirror\addon\tern\worker.js" />
+    <Content Include="lib\codemirror\addon\tern\worker.min.js" />
+    <Content Include="lib\codemirror\addon\wrap\hardwrap.js" />
+    <Content Include="lib\codemirror\addon\wrap\hardwrap.min.js" />
+    <Content Include="lib\codemirror\codemirror.css" />
+    <Content Include="lib\codemirror\codemirror.js" />
+    <Content Include="lib\codemirror\codemirror.min.css" />
+    <Content Include="lib\codemirror\codemirror.min.js" />
+    <Content Include="lib\codemirror\keymap\emacs.js" />
+    <Content Include="lib\codemirror\keymap\emacs.min.js" />
+    <Content Include="lib\codemirror\keymap\sublime.js" />
+    <Content Include="lib\codemirror\keymap\sublime.min.js" />
+    <Content Include="lib\codemirror\keymap\vim.js" />
+    <Content Include="lib\codemirror\keymap\vim.min.js" />
+    <Content Include="lib\codemirror\mode\apl\apl.js" />
+    <Content Include="lib\codemirror\mode\apl\apl.min.js" />
+    <Content Include="lib\codemirror\mode\asciiarmor\asciiarmor.js" />
+    <Content Include="lib\codemirror\mode\asciiarmor\asciiarmor.min.js" />
+    <Content Include="lib\codemirror\mode\asn.1\asn.1.js" />
+    <Content Include="lib\codemirror\mode\asn.1\asn.1.min.js" />
+    <Content Include="lib\codemirror\mode\asterisk\asterisk.js" />
+    <Content Include="lib\codemirror\mode\asterisk\asterisk.min.js" />
+    <Content Include="lib\codemirror\mode\brainfuck\brainfuck.js" />
+    <Content Include="lib\codemirror\mode\brainfuck\brainfuck.min.js" />
+    <Content Include="lib\codemirror\mode\clike\clike.js" />
+    <Content Include="lib\codemirror\mode\clike\clike.min.js" />
+    <Content Include="lib\codemirror\mode\clojure\clojure.js" />
+    <Content Include="lib\codemirror\mode\clojure\clojure.min.js" />
+    <Content Include="lib\codemirror\mode\cmake\cmake.js" />
+    <Content Include="lib\codemirror\mode\cmake\cmake.min.js" />
+    <Content Include="lib\codemirror\mode\cobol\cobol.js" />
+    <Content Include="lib\codemirror\mode\cobol\cobol.min.js" />
+    <Content Include="lib\codemirror\mode\coffeescript\coffeescript.js" />
+    <Content Include="lib\codemirror\mode\coffeescript\coffeescript.min.js" />
+    <Content Include="lib\codemirror\mode\commonlisp\commonlisp.js" />
+    <Content Include="lib\codemirror\mode\commonlisp\commonlisp.min.js" />
+    <Content Include="lib\codemirror\mode\crystal\crystal.js" />
+    <Content Include="lib\codemirror\mode\crystal\crystal.min.js" />
+    <Content Include="lib\codemirror\mode\css\css.js" />
+    <Content Include="lib\codemirror\mode\css\css.min.js" />
+    <Content Include="lib\codemirror\mode\cypher\cypher.js" />
+    <Content Include="lib\codemirror\mode\cypher\cypher.min.js" />
+    <Content Include="lib\codemirror\mode\dart\dart.js" />
+    <Content Include="lib\codemirror\mode\dart\dart.min.js" />
+    <Content Include="lib\codemirror\mode\diff\diff.js" />
+    <Content Include="lib\codemirror\mode\diff\diff.min.js" />
+    <Content Include="lib\codemirror\mode\django\django.js" />
+    <Content Include="lib\codemirror\mode\django\django.min.js" />
+    <Content Include="lib\codemirror\mode\dockerfile\dockerfile.js" />
+    <Content Include="lib\codemirror\mode\dockerfile\dockerfile.min.js" />
+    <Content Include="lib\codemirror\mode\dtd\dtd.js" />
+    <Content Include="lib\codemirror\mode\dtd\dtd.min.js" />
+    <Content Include="lib\codemirror\mode\dylan\dylan.js" />
+    <Content Include="lib\codemirror\mode\dylan\dylan.min.js" />
+    <Content Include="lib\codemirror\mode\d\d.js" />
+    <Content Include="lib\codemirror\mode\d\d.min.js" />
+    <Content Include="lib\codemirror\mode\ebnf\ebnf.js" />
+    <Content Include="lib\codemirror\mode\ebnf\ebnf.min.js" />
+    <Content Include="lib\codemirror\mode\ecl\ecl.js" />
+    <Content Include="lib\codemirror\mode\ecl\ecl.min.js" />
+    <Content Include="lib\codemirror\mode\eiffel\eiffel.js" />
+    <Content Include="lib\codemirror\mode\eiffel\eiffel.min.js" />
+    <Content Include="lib\codemirror\mode\elm\elm.js" />
+    <Content Include="lib\codemirror\mode\elm\elm.min.js" />
+    <Content Include="lib\codemirror\mode\erlang\erlang.js" />
+    <Content Include="lib\codemirror\mode\erlang\erlang.min.js" />
+    <Content Include="lib\codemirror\mode\factor\factor.js" />
+    <Content Include="lib\codemirror\mode\factor\factor.min.js" />
+    <Content Include="lib\codemirror\mode\fcl\fcl.js" />
+    <Content Include="lib\codemirror\mode\fcl\fcl.min.js" />
+    <Content Include="lib\codemirror\mode\forth\forth.js" />
+    <Content Include="lib\codemirror\mode\forth\forth.min.js" />
+    <Content Include="lib\codemirror\mode\fortran\fortran.js" />
+    <Content Include="lib\codemirror\mode\fortran\fortran.min.js" />
+    <Content Include="lib\codemirror\mode\gas\gas.js" />
+    <Content Include="lib\codemirror\mode\gas\gas.min.js" />
+    <Content Include="lib\codemirror\mode\gfm\gfm.js" />
+    <Content Include="lib\codemirror\mode\gfm\gfm.min.js" />
+    <Content Include="lib\codemirror\mode\gherkin\gherkin.js" />
+    <Content Include="lib\codemirror\mode\gherkin\gherkin.min.js" />
+    <Content Include="lib\codemirror\mode\go\go.js" />
+    <Content Include="lib\codemirror\mode\go\go.min.js" />
+    <Content Include="lib\codemirror\mode\groovy\groovy.js" />
+    <Content Include="lib\codemirror\mode\groovy\groovy.min.js" />
+    <Content Include="lib\codemirror\mode\haml\haml.js" />
+    <Content Include="lib\codemirror\mode\haml\haml.min.js" />
+    <Content Include="lib\codemirror\mode\handlebars\handlebars.js" />
+    <Content Include="lib\codemirror\mode\handlebars\handlebars.min.js" />
+    <Content Include="lib\codemirror\mode\haskell-literate\haskell-literate.js" />
+    <Content Include="lib\codemirror\mode\haskell-literate\haskell-literate.min.js" />
+    <Content Include="lib\codemirror\mode\haskell\haskell.js" />
+    <Content Include="lib\codemirror\mode\haskell\haskell.min.js" />
+    <Content Include="lib\codemirror\mode\haxe\haxe.js" />
+    <Content Include="lib\codemirror\mode\haxe\haxe.min.js" />
+    <Content Include="lib\codemirror\mode\htmlembedded\htmlembedded.js" />
+    <Content Include="lib\codemirror\mode\htmlembedded\htmlembedded.min.js" />
+    <Content Include="lib\codemirror\mode\htmlmixed\htmlmixed.js" />
+    <Content Include="lib\codemirror\mode\htmlmixed\htmlmixed.min.js" />
+    <Content Include="lib\codemirror\mode\http\http.js" />
+    <Content Include="lib\codemirror\mode\http\http.min.js" />
+    <Content Include="lib\codemirror\mode\idl\idl.js" />
+    <Content Include="lib\codemirror\mode\idl\idl.min.js" />
+    <Content Include="lib\codemirror\mode\javascript\javascript.js" />
+    <Content Include="lib\codemirror\mode\javascript\javascript.min.js" />
+    <Content Include="lib\codemirror\mode\jinja2\jinja2.js" />
+    <Content Include="lib\codemirror\mode\jinja2\jinja2.min.js" />
+    <Content Include="lib\codemirror\mode\jsx\jsx.js" />
+    <Content Include="lib\codemirror\mode\jsx\jsx.min.js" />
+    <Content Include="lib\codemirror\mode\julia\julia.js" />
+    <Content Include="lib\codemirror\mode\julia\julia.min.js" />
+    <Content Include="lib\codemirror\mode\livescript\livescript.js" />
+    <Content Include="lib\codemirror\mode\livescript\livescript.min.js" />
+    <Content Include="lib\codemirror\mode\lua\lua.js" />
+    <Content Include="lib\codemirror\mode\lua\lua.min.js" />
+    <Content Include="lib\codemirror\mode\markdown\markdown.js" />
+    <Content Include="lib\codemirror\mode\markdown\markdown.min.js" />
+    <Content Include="lib\codemirror\mode\mathematica\mathematica.js" />
+    <Content Include="lib\codemirror\mode\mathematica\mathematica.min.js" />
+    <Content Include="lib\codemirror\mode\mbox\mbox.js" />
+    <Content Include="lib\codemirror\mode\mbox\mbox.min.js" />
+    <Content Include="lib\codemirror\mode\meta.js" />
+    <Content Include="lib\codemirror\mode\meta.min.js" />
+    <Content Include="lib\codemirror\mode\mirc\mirc.js" />
+    <Content Include="lib\codemirror\mode\mirc\mirc.min.js" />
+    <Content Include="lib\codemirror\mode\mllike\mllike.js" />
+    <Content Include="lib\codemirror\mode\mllike\mllike.min.js" />
+    <Content Include="lib\codemirror\mode\modelica\modelica.js" />
+    <Content Include="lib\codemirror\mode\modelica\modelica.min.js" />
+    <Content Include="lib\codemirror\mode\mscgen\mscgen.js" />
+    <Content Include="lib\codemirror\mode\mscgen\mscgen.min.js" />
+    <Content Include="lib\codemirror\mode\mumps\mumps.js" />
+    <Content Include="lib\codemirror\mode\mumps\mumps.min.js" />
+    <Content Include="lib\codemirror\mode\nginx\nginx.js" />
+    <Content Include="lib\codemirror\mode\nginx\nginx.min.js" />
+    <Content Include="lib\codemirror\mode\nsis\nsis.js" />
+    <Content Include="lib\codemirror\mode\nsis\nsis.min.js" />
+    <Content Include="lib\codemirror\mode\ntriples\ntriples.js" />
+    <Content Include="lib\codemirror\mode\ntriples\ntriples.min.js" />
+    <Content Include="lib\codemirror\mode\octave\octave.js" />
+    <Content Include="lib\codemirror\mode\octave\octave.min.js" />
+    <Content Include="lib\codemirror\mode\oz\oz.js" />
+    <Content Include="lib\codemirror\mode\oz\oz.min.js" />
+    <Content Include="lib\codemirror\mode\pascal\pascal.js" />
+    <Content Include="lib\codemirror\mode\pascal\pascal.min.js" />
+    <Content Include="lib\codemirror\mode\pegjs\pegjs.js" />
+    <Content Include="lib\codemirror\mode\pegjs\pegjs.min.js" />
+    <Content Include="lib\codemirror\mode\perl\perl.js" />
+    <Content Include="lib\codemirror\mode\perl\perl.min.js" />
+    <Content Include="lib\codemirror\mode\php\php.js" />
+    <Content Include="lib\codemirror\mode\php\php.min.js" />
+    <Content Include="lib\codemirror\mode\pig\pig.js" />
+    <Content Include="lib\codemirror\mode\pig\pig.min.js" />
+    <Content Include="lib\codemirror\mode\powershell\powershell.js" />
+    <Content Include="lib\codemirror\mode\powershell\powershell.min.js" />
+    <Content Include="lib\codemirror\mode\properties\properties.js" />
+    <Content Include="lib\codemirror\mode\properties\properties.min.js" />
+    <Content Include="lib\codemirror\mode\protobuf\protobuf.js" />
+    <Content Include="lib\codemirror\mode\protobuf\protobuf.min.js" />
+    <Content Include="lib\codemirror\mode\pug\pug.js" />
+    <Content Include="lib\codemirror\mode\pug\pug.min.js" />
+    <Content Include="lib\codemirror\mode\puppet\puppet.js" />
+    <Content Include="lib\codemirror\mode\puppet\puppet.min.js" />
+    <Content Include="lib\codemirror\mode\python\python.js" />
+    <Content Include="lib\codemirror\mode\python\python.min.js" />
+    <Content Include="lib\codemirror\mode\q\q.js" />
+    <Content Include="lib\codemirror\mode\q\q.min.js" />
+    <Content Include="lib\codemirror\mode\rpm\rpm.js" />
+    <Content Include="lib\codemirror\mode\rpm\rpm.min.js" />
+    <Content Include="lib\codemirror\mode\rst\rst.js" />
+    <Content Include="lib\codemirror\mode\rst\rst.min.js" />
+    <Content Include="lib\codemirror\mode\ruby\ruby.js" />
+    <Content Include="lib\codemirror\mode\ruby\ruby.min.js" />
+    <Content Include="lib\codemirror\mode\rust\rust.js" />
+    <Content Include="lib\codemirror\mode\rust\rust.min.js" />
+    <Content Include="lib\codemirror\mode\r\r.js" />
+    <Content Include="lib\codemirror\mode\r\r.min.js" />
+    <Content Include="lib\codemirror\mode\sass\sass.js" />
+    <Content Include="lib\codemirror\mode\sass\sass.min.js" />
+    <Content Include="lib\codemirror\mode\sas\sas.js" />
+    <Content Include="lib\codemirror\mode\sas\sas.min.js" />
+    <Content Include="lib\codemirror\mode\scheme\scheme.js" />
+    <Content Include="lib\codemirror\mode\scheme\scheme.min.js" />
+    <Content Include="lib\codemirror\mode\shell\shell.js" />
+    <Content Include="lib\codemirror\mode\shell\shell.min.js" />
+    <Content Include="lib\codemirror\mode\sieve\sieve.js" />
+    <Content Include="lib\codemirror\mode\sieve\sieve.min.js" />
+    <Content Include="lib\codemirror\mode\slim\slim.js" />
+    <Content Include="lib\codemirror\mode\slim\slim.min.js" />
+    <Content Include="lib\codemirror\mode\smalltalk\smalltalk.js" />
+    <Content Include="lib\codemirror\mode\smalltalk\smalltalk.min.js" />
+    <Content Include="lib\codemirror\mode\smarty\smarty.js" />
+    <Content Include="lib\codemirror\mode\smarty\smarty.min.js" />
+    <Content Include="lib\codemirror\mode\solr\solr.js" />
+    <Content Include="lib\codemirror\mode\solr\solr.min.js" />
+    <Content Include="lib\codemirror\mode\soy\soy.js" />
+    <Content Include="lib\codemirror\mode\soy\soy.min.js" />
+    <Content Include="lib\codemirror\mode\sparql\sparql.js" />
+    <Content Include="lib\codemirror\mode\sparql\sparql.min.js" />
+    <Content Include="lib\codemirror\mode\spreadsheet\spreadsheet.js" />
+    <Content Include="lib\codemirror\mode\spreadsheet\spreadsheet.min.js" />
+    <Content Include="lib\codemirror\mode\sql\sql.js" />
+    <Content Include="lib\codemirror\mode\sql\sql.min.js" />
+    <Content Include="lib\codemirror\mode\stex\stex.js" />
+    <Content Include="lib\codemirror\mode\stex\stex.min.js" />
+    <Content Include="lib\codemirror\mode\stylus\stylus.js" />
+    <Content Include="lib\codemirror\mode\stylus\stylus.min.js" />
+    <Content Include="lib\codemirror\mode\swift\swift.js" />
+    <Content Include="lib\codemirror\mode\swift\swift.min.js" />
+    <Content Include="lib\codemirror\mode\tcl\tcl.js" />
+    <Content Include="lib\codemirror\mode\tcl\tcl.min.js" />
+    <Content Include="lib\codemirror\mode\textile\textile.js" />
+    <Content Include="lib\codemirror\mode\textile\textile.min.js" />
+    <Content Include="lib\codemirror\mode\tiddlywiki\tiddlywiki.css" />
+    <Content Include="lib\codemirror\mode\tiddlywiki\tiddlywiki.js" />
+    <Content Include="lib\codemirror\mode\tiddlywiki\tiddlywiki.min.css" />
+    <Content Include="lib\codemirror\mode\tiddlywiki\tiddlywiki.min.js" />
+    <Content Include="lib\codemirror\mode\tiki\tiki.css" />
+    <Content Include="lib\codemirror\mode\tiki\tiki.js" />
+    <Content Include="lib\codemirror\mode\tiki\tiki.min.css" />
+    <Content Include="lib\codemirror\mode\tiki\tiki.min.js" />
+    <Content Include="lib\codemirror\mode\toml\toml.js" />
+    <Content Include="lib\codemirror\mode\toml\toml.min.js" />
+    <Content Include="lib\codemirror\mode\tornado\tornado.js" />
+    <Content Include="lib\codemirror\mode\tornado\tornado.min.js" />
+    <Content Include="lib\codemirror\mode\troff\troff.js" />
+    <Content Include="lib\codemirror\mode\troff\troff.min.js" />
+    <Content Include="lib\codemirror\mode\ttcn-cfg\ttcn-cfg.js" />
+    <Content Include="lib\codemirror\mode\ttcn-cfg\ttcn-cfg.min.js" />
+    <Content Include="lib\codemirror\mode\ttcn\ttcn.js" />
+    <Content Include="lib\codemirror\mode\ttcn\ttcn.min.js" />
+    <Content Include="lib\codemirror\mode\turtle\turtle.js" />
+    <Content Include="lib\codemirror\mode\turtle\turtle.min.js" />
+    <Content Include="lib\codemirror\mode\twig\twig.js" />
+    <Content Include="lib\codemirror\mode\twig\twig.min.js" />
+    <Content Include="lib\codemirror\mode\vbscript\vbscript.js" />
+    <Content Include="lib\codemirror\mode\vbscript\vbscript.min.js" />
+    <Content Include="lib\codemirror\mode\vb\vb.js" />
+    <Content Include="lib\codemirror\mode\vb\vb.min.js" />
+    <Content Include="lib\codemirror\mode\velocity\velocity.js" />
+    <Content Include="lib\codemirror\mode\velocity\velocity.min.js" />
+    <Content Include="lib\codemirror\mode\verilog\verilog.js" />
+    <Content Include="lib\codemirror\mode\verilog\verilog.min.js" />
+    <Content Include="lib\codemirror\mode\vhdl\vhdl.js" />
+    <Content Include="lib\codemirror\mode\vhdl\vhdl.min.js" />
+    <Content Include="lib\codemirror\mode\vue\vue.js" />
+    <Content Include="lib\codemirror\mode\vue\vue.min.js" />
+    <Content Include="lib\codemirror\mode\wast\wast.js" />
+    <Content Include="lib\codemirror\mode\wast\wast.min.js" />
+    <Content Include="lib\codemirror\mode\webidl\webidl.js" />
+    <Content Include="lib\codemirror\mode\webidl\webidl.min.js" />
+    <Content Include="lib\codemirror\mode\xml\xml.js" />
+    <Content Include="lib\codemirror\mode\xml\xml.min.js" />
+    <Content Include="lib\codemirror\mode\xquery\xquery.js" />
+    <Content Include="lib\codemirror\mode\xquery\xquery.min.js" />
+    <Content Include="lib\codemirror\mode\yacas\yacas.js" />
+    <Content Include="lib\codemirror\mode\yacas\yacas.min.js" />
+    <Content Include="lib\codemirror\mode\yaml-frontmatter\yaml-frontmatter.js" />
+    <Content Include="lib\codemirror\mode\yaml-frontmatter\yaml-frontmatter.min.js" />
+    <Content Include="lib\codemirror\mode\yaml\yaml.js" />
+    <Content Include="lib\codemirror\mode\yaml\yaml.min.js" />
+    <Content Include="lib\codemirror\mode\z80\z80.js" />
+    <Content Include="lib\codemirror\mode\z80\z80.min.js" />
+    <Content Include="lib\codemirror\theme\3024-day.css" />
+    <Content Include="lib\codemirror\theme\3024-day.min.css" />
+    <Content Include="lib\codemirror\theme\3024-night.css" />
+    <Content Include="lib\codemirror\theme\3024-night.min.css" />
+    <Content Include="lib\codemirror\theme\abbott.css" />
+    <Content Include="lib\codemirror\theme\abbott.min.css" />
+    <Content Include="lib\codemirror\theme\abcdef.css" />
+    <Content Include="lib\codemirror\theme\abcdef.min.css" />
+    <Content Include="lib\codemirror\theme\ambiance-mobile.css" />
+    <Content Include="lib\codemirror\theme\ambiance-mobile.min.css" />
+    <Content Include="lib\codemirror\theme\ambiance.css" />
+    <Content Include="lib\codemirror\theme\ambiance.min.css" />
+    <Content Include="lib\codemirror\theme\ayu-dark.css" />
+    <Content Include="lib\codemirror\theme\ayu-dark.min.css" />
+    <Content Include="lib\codemirror\theme\ayu-mirage.css" />
+    <Content Include="lib\codemirror\theme\ayu-mirage.min.css" />
+    <Content Include="lib\codemirror\theme\base16-dark.css" />
+    <Content Include="lib\codemirror\theme\base16-dark.min.css" />
+    <Content Include="lib\codemirror\theme\base16-light.css" />
+    <Content Include="lib\codemirror\theme\base16-light.min.css" />
+    <Content Include="lib\codemirror\theme\bespin.css" />
+    <Content Include="lib\codemirror\theme\bespin.min.css" />
+    <Content Include="lib\codemirror\theme\blackboard.css" />
+    <Content Include="lib\codemirror\theme\blackboard.min.css" />
+    <Content Include="lib\codemirror\theme\cobalt.css" />
+    <Content Include="lib\codemirror\theme\cobalt.min.css" />
+    <Content Include="lib\codemirror\theme\colorforth.css" />
+    <Content Include="lib\codemirror\theme\colorforth.min.css" />
+    <Content Include="lib\codemirror\theme\darcula.css" />
+    <Content Include="lib\codemirror\theme\darcula.min.css" />
+    <Content Include="lib\codemirror\theme\dracula.css" />
+    <Content Include="lib\codemirror\theme\dracula.min.css" />
+    <Content Include="lib\codemirror\theme\duotone-dark.css" />
+    <Content Include="lib\codemirror\theme\duotone-dark.min.css" />
+    <Content Include="lib\codemirror\theme\duotone-light.css" />
+    <Content Include="lib\codemirror\theme\duotone-light.min.css" />
+    <Content Include="lib\codemirror\theme\eclipse.css" />
+    <Content Include="lib\codemirror\theme\eclipse.min.css" />
+    <Content Include="lib\codemirror\theme\elegant.css" />
+    <Content Include="lib\codemirror\theme\elegant.min.css" />
+    <Content Include="lib\codemirror\theme\erlang-dark.css" />
+    <Content Include="lib\codemirror\theme\erlang-dark.min.css" />
+    <Content Include="lib\codemirror\theme\gruvbox-dark.css" />
+    <Content Include="lib\codemirror\theme\gruvbox-dark.min.css" />
+    <Content Include="lib\codemirror\theme\hopscotch.css" />
+    <Content Include="lib\codemirror\theme\hopscotch.min.css" />
+    <Content Include="lib\codemirror\theme\icecoder.css" />
+    <Content Include="lib\codemirror\theme\icecoder.min.css" />
+    <Content Include="lib\codemirror\theme\idea.css" />
+    <Content Include="lib\codemirror\theme\idea.min.css" />
+    <Content Include="lib\codemirror\theme\isotope.css" />
+    <Content Include="lib\codemirror\theme\isotope.min.css" />
+    <Content Include="lib\codemirror\theme\juejin.css" />
+    <Content Include="lib\codemirror\theme\juejin.min.css" />
+    <Content Include="lib\codemirror\theme\lesser-dark.css" />
+    <Content Include="lib\codemirror\theme\lesser-dark.min.css" />
+    <Content Include="lib\codemirror\theme\liquibyte.css" />
+    <Content Include="lib\codemirror\theme\liquibyte.min.css" />
+    <Content Include="lib\codemirror\theme\lucario.css" />
+    <Content Include="lib\codemirror\theme\lucario.min.css" />
+    <Content Include="lib\codemirror\theme\material-darker.css" />
+    <Content Include="lib\codemirror\theme\material-darker.min.css" />
+    <Content Include="lib\codemirror\theme\material-ocean.css" />
+    <Content Include="lib\codemirror\theme\material-ocean.min.css" />
+    <Content Include="lib\codemirror\theme\material-palenight.css" />
+    <Content Include="lib\codemirror\theme\material-palenight.min.css" />
+    <Content Include="lib\codemirror\theme\material.css" />
+    <Content Include="lib\codemirror\theme\material.min.css" />
+    <Content Include="lib\codemirror\theme\mbo.css" />
+    <Content Include="lib\codemirror\theme\mbo.min.css" />
+    <Content Include="lib\codemirror\theme\mdn-like.css" />
+    <Content Include="lib\codemirror\theme\mdn-like.min.css" />
+    <Content Include="lib\codemirror\theme\midnight.css" />
+    <Content Include="lib\codemirror\theme\midnight.min.css" />
+    <Content Include="lib\codemirror\theme\monokai.css" />
+    <Content Include="lib\codemirror\theme\monokai.min.css" />
+    <Content Include="lib\codemirror\theme\moxer.css" />
+    <Content Include="lib\codemirror\theme\moxer.min.css" />
+    <Content Include="lib\codemirror\theme\neat.css" />
+    <Content Include="lib\codemirror\theme\neat.min.css" />
+    <Content Include="lib\codemirror\theme\neo.css" />
+    <Content Include="lib\codemirror\theme\neo.min.css" />
+    <Content Include="lib\codemirror\theme\night.css" />
+    <Content Include="lib\codemirror\theme\night.min.css" />
+    <Content Include="lib\codemirror\theme\nord.css" />
+    <Content Include="lib\codemirror\theme\nord.min.css" />
+    <Content Include="lib\codemirror\theme\oceanic-next.css" />
+    <Content Include="lib\codemirror\theme\oceanic-next.min.css" />
+    <Content Include="lib\codemirror\theme\panda-syntax.css" />
+    <Content Include="lib\codemirror\theme\panda-syntax.min.css" />
+    <Content Include="lib\codemirror\theme\paraiso-dark.css" />
+    <Content Include="lib\codemirror\theme\paraiso-dark.min.css" />
+    <Content Include="lib\codemirror\theme\paraiso-light.css" />
+    <Content Include="lib\codemirror\theme\paraiso-light.min.css" />
+    <Content Include="lib\codemirror\theme\pastel-on-dark.css" />
+    <Content Include="lib\codemirror\theme\pastel-on-dark.min.css" />
+    <Content Include="lib\codemirror\theme\railscasts.css" />
+    <Content Include="lib\codemirror\theme\railscasts.min.css" />
+    <Content Include="lib\codemirror\theme\rubyblue.css" />
+    <Content Include="lib\codemirror\theme\rubyblue.min.css" />
+    <Content Include="lib\codemirror\theme\seti.css" />
+    <Content Include="lib\codemirror\theme\seti.min.css" />
+    <Content Include="lib\codemirror\theme\shadowfox.css" />
+    <Content Include="lib\codemirror\theme\shadowfox.min.css" />
+    <Content Include="lib\codemirror\theme\solarized.css" />
+    <Content Include="lib\codemirror\theme\solarized.min.css" />
+    <Content Include="lib\codemirror\theme\ssms.css" />
+    <Content Include="lib\codemirror\theme\ssms.min.css" />
+    <Content Include="lib\codemirror\theme\the-matrix.css" />
+    <Content Include="lib\codemirror\theme\the-matrix.min.css" />
+    <Content Include="lib\codemirror\theme\tomorrow-night-bright.css" />
+    <Content Include="lib\codemirror\theme\tomorrow-night-bright.min.css" />
+    <Content Include="lib\codemirror\theme\tomorrow-night-eighties.css" />
+    <Content Include="lib\codemirror\theme\tomorrow-night-eighties.min.css" />
+    <Content Include="lib\codemirror\theme\ttcn.css" />
+    <Content Include="lib\codemirror\theme\ttcn.min.css" />
+    <Content Include="lib\codemirror\theme\twilight.css" />
+    <Content Include="lib\codemirror\theme\twilight.min.css" />
+    <Content Include="lib\codemirror\theme\vibrant-ink.css" />
+    <Content Include="lib\codemirror\theme\vibrant-ink.min.css" />
+    <Content Include="lib\codemirror\theme\xq-dark.css" />
+    <Content Include="lib\codemirror\theme\xq-dark.min.css" />
+    <Content Include="lib\codemirror\theme\xq-light.css" />
+    <Content Include="lib\codemirror\theme\xq-light.min.css" />
+    <Content Include="lib\codemirror\theme\yeti.css" />
+    <Content Include="lib\codemirror\theme\yeti.min.css" />
+    <Content Include="lib\codemirror\theme\yonce.css" />
+    <Content Include="lib\codemirror\theme\yonce.min.css" />
+    <Content Include="lib\codemirror\theme\zenburn.css" />
+    <Content Include="lib\codemirror\theme\zenburn.min.css" />
+    <Content Include="lib\crypto-js\aes.js" />
+    <Content Include="lib\crypto-js\aes.min.js" />
+    <Content Include="lib\crypto-js\cipher-core.js" />
+    <Content Include="lib\crypto-js\cipher-core.min.js" />
+    <Content Include="lib\crypto-js\core.js" />
+    <Content Include="lib\crypto-js\core.min.js" />
+    <Content Include="lib\crypto-js\crypto-js.js" />
+    <Content Include="lib\crypto-js\crypto-js.min.js" />
+    <Content Include="lib\crypto-js\enc-base64.js" />
+    <Content Include="lib\crypto-js\enc-base64.min.js" />
+    <Content Include="lib\crypto-js\enc-hex.js" />
+    <Content Include="lib\crypto-js\enc-hex.min.js" />
+    <Content Include="lib\crypto-js\enc-latin1.js" />
+    <Content Include="lib\crypto-js\enc-latin1.min.js" />
+    <Content Include="lib\crypto-js\enc-utf16.js" />
+    <Content Include="lib\crypto-js\enc-utf16.min.js" />
+    <Content Include="lib\crypto-js\enc-utf8.js" />
+    <Content Include="lib\crypto-js\enc-utf8.min.js" />
+    <Content Include="lib\crypto-js\evpkdf.js" />
+    <Content Include="lib\crypto-js\evpkdf.min.js" />
+    <Content Include="lib\crypto-js\format-hex.js" />
+    <Content Include="lib\crypto-js\format-hex.min.js" />
+    <Content Include="lib\crypto-js\format-openssl.js" />
+    <Content Include="lib\crypto-js\format-openssl.min.js" />
+    <Content Include="lib\crypto-js\hmac-md5.js" />
+    <Content Include="lib\crypto-js\hmac-md5.min.js" />
+    <Content Include="lib\crypto-js\hmac-ripemd160.js" />
+    <Content Include="lib\crypto-js\hmac-ripemd160.min.js" />
+    <Content Include="lib\crypto-js\hmac-sha1.js" />
+    <Content Include="lib\crypto-js\hmac-sha1.min.js" />
+    <Content Include="lib\crypto-js\hmac-sha224.js" />
+    <Content Include="lib\crypto-js\hmac-sha224.min.js" />
+    <Content Include="lib\crypto-js\hmac-sha256.js" />
+    <Content Include="lib\crypto-js\hmac-sha256.min.js" />
+    <Content Include="lib\crypto-js\hmac-sha3.js" />
+    <Content Include="lib\crypto-js\hmac-sha3.min.js" />
+    <Content Include="lib\crypto-js\hmac-sha384.js" />
+    <Content Include="lib\crypto-js\hmac-sha384.min.js" />
+    <Content Include="lib\crypto-js\hmac-sha512.js" />
+    <Content Include="lib\crypto-js\hmac-sha512.min.js" />
+    <Content Include="lib\crypto-js\hmac.js" />
+    <Content Include="lib\crypto-js\hmac.min.js" />
+    <Content Include="lib\crypto-js\index.js" />
+    <Content Include="lib\crypto-js\index.min.js" />
+    <Content Include="lib\crypto-js\lib-typedarrays.js" />
+    <Content Include="lib\crypto-js\lib-typedarrays.min.js" />
+    <Content Include="lib\crypto-js\md5.js" />
+    <Content Include="lib\crypto-js\md5.min.js" />
+    <Content Include="lib\crypto-js\mode-cfb.js" />
+    <Content Include="lib\crypto-js\mode-cfb.min.js" />
+    <Content Include="lib\crypto-js\mode-ctr-gladman.js" />
+    <Content Include="lib\crypto-js\mode-ctr-gladman.min.js" />
+    <Content Include="lib\crypto-js\mode-ctr.js" />
+    <Content Include="lib\crypto-js\mode-ctr.min.js" />
+    <Content Include="lib\crypto-js\mode-ecb.js" />
+    <Content Include="lib\crypto-js\mode-ecb.min.js" />
+    <Content Include="lib\crypto-js\mode-ofb.js" />
+    <Content Include="lib\crypto-js\mode-ofb.min.js" />
+    <Content Include="lib\crypto-js\pad-ansix923.js" />
+    <Content Include="lib\crypto-js\pad-ansix923.min.js" />
+    <Content Include="lib\crypto-js\pad-iso10126.js" />
+    <Content Include="lib\crypto-js\pad-iso10126.min.js" />
+    <Content Include="lib\crypto-js\pad-iso97971.js" />
+    <Content Include="lib\crypto-js\pad-iso97971.min.js" />
+    <Content Include="lib\crypto-js\pad-nopadding.js" />
+    <Content Include="lib\crypto-js\pad-nopadding.min.js" />
+    <Content Include="lib\crypto-js\pad-pkcs7.js" />
+    <Content Include="lib\crypto-js\pad-pkcs7.min.js" />
+    <Content Include="lib\crypto-js\pad-zeropadding.js" />
+    <Content Include="lib\crypto-js\pad-zeropadding.min.js" />
+    <Content Include="lib\crypto-js\pbkdf2.js" />
+    <Content Include="lib\crypto-js\pbkdf2.min.js" />
+    <Content Include="lib\crypto-js\rabbit-legacy.js" />
+    <Content Include="lib\crypto-js\rabbit-legacy.min.js" />
+    <Content Include="lib\crypto-js\rabbit.js" />
+    <Content Include="lib\crypto-js\rabbit.min.js" />
+    <Content Include="lib\crypto-js\rc4.js" />
+    <Content Include="lib\crypto-js\rc4.min.js" />
+    <Content Include="lib\crypto-js\ripemd160.js" />
+    <Content Include="lib\crypto-js\ripemd160.min.js" />
+    <Content Include="lib\crypto-js\sha1.js" />
+    <Content Include="lib\crypto-js\sha1.min.js" />
+    <Content Include="lib\crypto-js\sha224.js" />
+    <Content Include="lib\crypto-js\sha224.min.js" />
+    <Content Include="lib\crypto-js\sha256.js" />
+    <Content Include="lib\crypto-js\sha256.min.js" />
+    <Content Include="lib\crypto-js\sha3.js" />
+    <Content Include="lib\crypto-js\sha3.min.js" />
+    <Content Include="lib\crypto-js\sha384.js" />
+    <Content Include="lib\crypto-js\sha384.min.js" />
+    <Content Include="lib\crypto-js\sha512.js" />
+    <Content Include="lib\crypto-js\sha512.min.js" />
+    <Content Include="lib\crypto-js\tripledes.js" />
+    <Content Include="lib\crypto-js\tripledes.min.js" />
+    <Content Include="lib\crypto-js\x64-core.js" />
+    <Content Include="lib\crypto-js\x64-core.min.js" />
+    <Content Include="lib\filesaver\FileSaver.js" />
+    <Content Include="lib\filesaver\FileSaver.min.js" />
+    <Content Include="lib\headjs\head-1.0.3.min.js" />
+    <Content Include="lib\headjs\head.core.js" />
+    <Content Include="lib\headjs\head.core.min.js" />
+    <Content Include="lib\headjs\head.css3.js" />
+    <Content Include="lib\headjs\head.css3.min.js" />
+    <Content Include="lib\headjs\head.js" />
+    <Content Include="lib\headjs\head.load.js" />
+    <Content Include="lib\headjs\head.load.min.js" />
+    <Content Include="lib\headjs\head.min.js" />
+    <Content Include="lib\jquery\jquery-3.7.0.min.js" />
+    <Content Include="lib\jquery\jquery.js" />
+    <Content Include="lib\jquery\jquery.min.js" />
+    <Content Include="lib\jquery\jquery.slim.js" />
+    <Content Include="lib\jquery\jquery.slim.min.js" />
+    <Content Include="lib\jsviews\jsviews-1.0.11.min.js" />
+    <Content Include="lib\mousetrap\mousetrap.js" />
+    <Content Include="lib\mousetrap\mousetrap.min.js" />
+    <Content Include="lib\mousetrap\plugins\bind-dictionary\mousetrap-bind-dictionary.js" />
+    <Content Include="lib\mousetrap\plugins\bind-dictionary\mousetrap-bind-dictionary.min.js" />
+    <Content Include="lib\mousetrap\plugins\global-bind\mousetrap-global-bind.js" />
+    <Content Include="lib\mousetrap\plugins\global-bind\mousetrap-global-bind.min.js" />
+    <Content Include="lib\mousetrap\plugins\pause\mousetrap-pause.js" />
+    <Content Include="lib\mousetrap\plugins\pause\mousetrap-pause.min.js" />
+    <Content Include="lib\mousetrap\plugins\record\mousetrap-record.js" />
+    <Content Include="lib\mousetrap\plugins\record\mousetrap-record.min.js" />
+    <Content Include="index.html" />
+    <Content Include="category.html" />
+    <Content Include="favicon.ico" />
+    <Content Include="Web.config" />
+    <TypeScriptCompile Include="lib\codemirror\typescript\codemirror.d.ts" />
+    <TypeScriptCompile Include="lib\filesaver\filesaver.d.ts" />
+    <TypeScriptCompile Include="lib\headjs\headjs.d.ts" />
+    <TypeScriptCompile Include="lib\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="lib\jsviews\index.d.ts" />
+    <TypeScriptCompile Include="lib\kendoui\typescript\kendo.all.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bundleconfig.json" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <Content Include="lib\headjs\head.core.min.js.map" />
+    <Content Include="lib\jquery\jquery.min.map" />
+    <Content Include="lib\jquery\jquery.slim.min.map" />
+    <Content Include="lib\headjs\head.css3.min.js.map" />
+    <Content Include="lib\headjs\head.load.min.js.map" />
+    <Content Include="lib\headjs\head.min.js.map" />
+    <Content Include="lib\crypto-js\aes.min.js.map" />
+    <Content Include="lib\crypto-js\cipher-core.min.js.map" />
+    <Content Include="lib\crypto-js\core.min.js.map" />
+    <Content Include="lib\crypto-js\crypto-js.min.js.map" />
+    <Content Include="lib\crypto-js\enc-base64.min.js.map" />
+    <Content Include="lib\crypto-js\enc-hex.min.js.map" />
+    <Content Include="lib\crypto-js\enc-latin1.min.js.map" />
+    <Content Include="lib\crypto-js\enc-utf16.min.js.map" />
+    <Content Include="lib\crypto-js\enc-utf8.min.js.map" />
+    <Content Include="lib\crypto-js\evpkdf.min.js.map" />
+    <Content Include="lib\crypto-js\format-hex.min.js.map" />
+    <Content Include="lib\crypto-js\format-openssl.min.js.map" />
+    <Content Include="lib\crypto-js\hmac-md5.min.js.map" />
+    <Content Include="lib\crypto-js\hmac-ripemd160.min.js.map" />
+    <Content Include="lib\crypto-js\hmac-sha1.min.js.map" />
+    <Content Include="lib\crypto-js\hmac-sha224.min.js.map" />
+    <Content Include="lib\crypto-js\hmac-sha256.min.js.map" />
+    <Content Include="lib\crypto-js\hmac-sha3.min.js.map" />
+    <Content Include="lib\crypto-js\hmac-sha384.min.js.map" />
+    <Content Include="lib\crypto-js\hmac-sha512.min.js.map" />
+    <Content Include="lib\crypto-js\hmac.min.js.map" />
+    <Content Include="lib\crypto-js\index.min.js.map" />
+    <Content Include="lib\crypto-js\lib-typedarrays.min.js.map" />
+    <Content Include="lib\crypto-js\md5.min.js.map" />
+    <Content Include="lib\crypto-js\mode-cfb.min.js.map" />
+    <Content Include="lib\crypto-js\mode-ctr-gladman.min.js.map" />
+    <Content Include="lib\crypto-js\mode-ctr.min.js.map" />
+    <Content Include="lib\crypto-js\mode-ecb.min.js.map" />
+    <Content Include="lib\crypto-js\mode-ofb.min.js.map" />
+    <Content Include="lib\crypto-js\pad-ansix923.min.js.map" />
+    <Content Include="lib\crypto-js\pad-iso10126.min.js.map" />
+    <Content Include="lib\crypto-js\pad-iso97971.min.js.map" />
+    <Content Include="lib\crypto-js\pad-nopadding.min.js.map" />
+    <Content Include="lib\crypto-js\pad-pkcs7.min.js.map" />
+    <Content Include="lib\crypto-js\pad-zeropadding.min.js.map" />
+    <Content Include="lib\crypto-js\pbkdf2.min.js.map" />
+    <Content Include="lib\crypto-js\rabbit-legacy.min.js.map" />
+    <Content Include="lib\crypto-js\rabbit.min.js.map" />
+    <Content Include="lib\crypto-js\rc4.min.js.map" />
+    <Content Include="lib\crypto-js\ripemd160.min.js.map" />
+    <Content Include="lib\crypto-js\sha1.min.js.map" />
+    <Content Include="lib\crypto-js\sha224.min.js.map" />
+    <Content Include="lib\crypto-js\sha256.min.js.map" />
+    <Content Include="lib\crypto-js\sha3.min.js.map" />
+    <Content Include="lib\crypto-js\sha384.min.js.map" />
+    <Content Include="lib\crypto-js\sha512.min.js.map" />
+    <Content Include="lib\crypto-js\tripledes.min.js.map" />
+    <Content Include="lib\crypto-js\x64-core.min.js.map" />
+    <Content Include="lib\bootstrap\scss\_alert.scss" />
+    <Content Include="lib\bootstrap\scss\_badge.scss" />
+    <Content Include="lib\bootstrap\scss\_breadcrumb.scss" />
+    <Content Include="lib\bootstrap\scss\_button-group.scss" />
+    <Content Include="lib\bootstrap\scss\_buttons.scss" />
+    <Content Include="lib\bootstrap\scss\_card.scss" />
+    <Content Include="lib\bootstrap\scss\_carousel.scss" />
+    <Content Include="lib\bootstrap\scss\_close.scss" />
+    <Content Include="lib\bootstrap\scss\_code.scss" />
+    <Content Include="lib\bootstrap\scss\_custom-forms.scss" />
+    <Content Include="lib\bootstrap\scss\_dropdown.scss" />
+    <Content Include="lib\bootstrap\scss\_forms.scss" />
+    <Content Include="lib\bootstrap\scss\_functions.scss" />
+    <Content Include="lib\bootstrap\scss\_grid.scss" />
+    <Content Include="lib\bootstrap\scss\_images.scss" />
+    <Content Include="lib\bootstrap\scss\_input-group.scss" />
+    <Content Include="lib\bootstrap\scss\_jumbotron.scss" />
+    <Content Include="lib\bootstrap\scss\_list-group.scss" />
+    <Content Include="lib\bootstrap\scss\_media.scss" />
+    <Content Include="lib\bootstrap\scss\_mixins.scss" />
+    <Content Include="lib\bootstrap\scss\_modal.scss" />
+    <Content Include="lib\bootstrap\scss\_nav.scss" />
+    <Content Include="lib\bootstrap\scss\_navbar.scss" />
+    <Content Include="lib\bootstrap\scss\_pagination.scss" />
+    <Content Include="lib\bootstrap\scss\_popover.scss" />
+    <Content Include="lib\bootstrap\scss\_print.scss" />
+    <Content Include="lib\bootstrap\scss\_progress.scss" />
+    <Content Include="lib\bootstrap\scss\_reboot.scss" />
+    <Content Include="lib\bootstrap\scss\bootstrap-grid.scss" />
+    <Content Include="lib\bootstrap\scss\_root.scss" />
+    <Content Include="lib\bootstrap\scss\_spinners.scss" />
+    <Content Include="lib\bootstrap\scss\_tables.scss" />
+    <Content Include="lib\bootstrap\scss\_toasts.scss" />
+    <Content Include="lib\bootstrap\scss\_tooltip.scss" />
+    <Content Include="lib\bootstrap\scss\_transitions.scss" />
+    <Content Include="lib\bootstrap\scss\_type.scss" />
+    <Content Include="lib\bootstrap\scss\_utilities.scss" />
+    <Content Include="lib\bootstrap\scss\_variables.scss" />
+    <Content Include="lib\bootstrap\scss\bootstrap-reboot.scss" />
+    <Content Include="lib\bootstrap\scss\bootstrap.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_alert.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_background-variant.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_badge.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_border-radius.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_box-shadow.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_breakpoints.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_buttons.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_caret.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_clearfix.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_deprecate.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_float.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_forms.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_gradients.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_grid-framework.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_grid.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_hover.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_image.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_list-group.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_lists.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_nav-divider.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_pagination.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_reset-text.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_resize.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_screen-reader.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_size.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_table-row.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_text-emphasis.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_text-hide.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_text-truncate.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_transition.scss" />
+    <Content Include="lib\bootstrap\scss\mixins\_visibility.scss" />
+    <Content Include="lib\bootstrap\scss\utilities\_align.scss" />
+    <Content Include="lib\bootstrap\scss\utilities\_background.scss" />
+    <Content Include="lib\bootstrap\scss\utilities\_borders.scss" />
+    <Content Include="lib\bootstrap\scss\utilities\_clearfix.scss" />
+    <Content Include="lib\bootstrap\scss\utilities\_display.scss" />
+    <Content Include="lib\bootstrap\scss\utilities\_embed.scss" />
+    <Content Include="lib\bootstrap\scss\utilities\_flex.scss" />
+    <Content Include="lib\bootstrap\scss\utilities\_float.scss" />
+    <Content Include="lib\bootstrap\scss\utilities\_interactions.scss" />
+    <Content Include="lib\bootstrap\scss\utilities\_overflow.scss" />
+    <Content Include="lib\bootstrap\scss\utilities\_position.scss" />
+    <Content Include="lib\bootstrap\scss\utilities\_screenreaders.scss" />
+    <Content Include="lib\bootstrap\scss\utilities\_shadows.scss" />
+    <Content Include="lib\bootstrap\scss\utilities\_sizing.scss" />
+    <Content Include="lib\bootstrap\scss\utilities\_spacing.scss" />
+    <Content Include="lib\bootstrap\scss\utilities\_stretched-link.scss" />
+    <Content Include="lib\bootstrap\scss\utilities\_text.scss" />
+    <Content Include="lib\bootstrap\scss\utilities\_visibility.scss" />
+    <Content Include="lib\bootstrap\scss\vendor\_rfs.scss" />
+    <Content Include="lib\filesaver\FileSaver.min.js.map" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="assets\js\Base.d.ts" />
+    <TypeScriptCompile Include="assets\js\proxy.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\fonts\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4590</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2272/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\BuildBundlerMinifier.3.2.449\build\BuildBundlerMinifier.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\BuildBundlerMinifier.3.2.449\build\BuildBundlerMinifier.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.1.10.14\build\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.1.10.14\build\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.1.10.14\build\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.1.10.14\build\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.targets'))" />
+    <Error Condition="!Exists('..\packages\BuildWebCompiler.1.12.394\build\BuildWebCompiler.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\BuildWebCompiler.1.12.394\build\BuildWebCompiler.targets'))" />
+  </Target>
+  <Target Name="GatherAllFilesToPublish">
+  </Target>
+  <Import Project="..\packages\BuildBundlerMinifier.3.2.449\build\BuildBundlerMinifier.targets" Condition="Exists('..\packages\BuildBundlerMinifier.3.2.449\build\BuildBundlerMinifier.targets')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
+  <Import Project="..\packages\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.1.10.14\build\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.targets" Condition="Exists('..\packages\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.1.10.14\build\Microsoft.VisualStudio.Azure.Containers.Tools.Targets.targets')" />
+  <Import Project="..\packages\BuildWebCompiler.1.12.394\build\BuildWebCompiler.targets" Condition="Exists('..\packages\BuildWebCompiler.1.12.394\build\BuildWebCompiler.targets')" />
+</Project>

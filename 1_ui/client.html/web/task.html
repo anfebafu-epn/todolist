@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <title>To do list</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="nMorph Platform" />
+    <meta property="og:type" content="product.group" />
+    <meta property="og:url" content="https://www.nmorph.com" />
+    <meta property="og:image" content="favicon.svg" />
+    <!-- Favicon -->
+    <!--<link rel="shortcut icon" type="image/x-icon" href="assets/imgs/favicon.svg" />-->
+</head>
+
+<body>
+    <header id="header">
+        <a href="task.html">Tasks</a>
+        <a href="person.html">Users</a>
+        <a href="category.html">Categories</a>
+        <a href="javascript: ui.Task.CloseSession();">Close Session</a>
+    </header>
+
+    <main>
+        <h1>Tasks</h1>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button id="searchButton">Search</button>
+            <button id="clearButton">Clear</button>
+            <button id="newButton">New</button>
+        </div>
+        <div id="categoryList">
+        </div>
+        <div id="personList">
+        </div>
+        <div id="tasksContainer">
+        </div>
+
+        <div id="editModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Edit Task</h2>
+                <div id="editTaskForm">
+                    <input type="hidden" id="taskId">
+                    <label for="taskPersonId">Assigned to:</label>
+                    <select id="taskPersonId" name="taskPersonId">
+                        <option value="0">Select</option>
+                    </select><br />
+                    <label for="taskCategoryId">Categoría:</label>
+                    <select id="taskCategoryId" name="taskCategoryId">
+                        <option value="0">Select</option>
+                    </select><br />
+                    <label for="taskTitle">Title:</label>
+                    <input type="text" id="taskTitle" name="taskTitle" required><br />
+                    <label for="taskDescription">Description:</label>
+                    <textarea id="taskDescription" name="taskDescription"></textarea><br />
+                    <label for="taskDueDate">Due Date:</label>
+                    <input type="date" id="taskDueDate" name="taskDueDate" required><br />
+                    <label for="taskIsCompleted">Is Completed:</label>
+                    <input type="checkbox" id="taskIsCompleted" name="taskIsCompleted" required><br />
+
+                    <div class="editButtons">
+                        <button id="btn_Save">Save</button>
+                        <button id="btn_Delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="footer">
+    </footer>
+
+    <div id="notificationContainer" class="hidden">
+        <div id="notificationMessage"></div>
+    </div>
+
+    <script src="lib/headjs/head-1.0.3.min.js" data-headjs-load="task.js?v=XXXXXXXXXXXX"></script>
+</body>
+</html>
